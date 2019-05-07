@@ -1,3 +1,33 @@
- - Shell interactivo
+ - Shell interactivo (compartido)
  - Empezar a escribir el readme (Versiones de las cosas, entorno usado, ejemplos, como compilar el programa, como ejecutarlo, algunas fotos)
- - Make
+ - Make (compartido)
+
+ # four_number_game
+ - Unittest of Auxiliar Functions
+ - Comentarios para el usuario del tipo "Estas mas cerca" o "Ni cerca" (agregar algo de trolleo)
+ con algun diccionario y una clase
+
+ # thinker
+  - Instructions (and rules)
+  - Show options
+
+
+  - Random questions (to generate restrictions)
+  - Generate a number (among the restrictions)
+  - Ask the user (is this the correct number?)
+
+  - Type of Restrictions
+    - Number length
+    - With boundaries
+    - Specific numbers
+    - With number/position restrictions (9876, number 8: position 2)
+
+  - Classes
+    - Generator
+    - Questions
+    - Restrictions
+
+  - Questions to respond?
+    - How to represent the data structure?
+
+
