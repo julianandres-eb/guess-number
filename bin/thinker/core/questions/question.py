@@ -54,9 +54,11 @@ def askForResponses(allQuestions, answers):
             digitsCorrect = True
 
     while positionCorrect is False:
-        position = int(input(allQuestions[1].getTitle() + " " + str(random.randint(1, answers[0])) + "?: "))
-        if position > 0:
+        position = random.randint(1, answers[0])
+        number = int(input(allQuestions[1].getTitle() + " " + str(position) + "?: "))
+        if number > 0:
             answers.append(position)
+            answers.append(number)
             positionCorrect = True
 
     while biggerCorrect is False:
@@ -75,7 +77,7 @@ def askForResponses(allQuestions, answers):
             biggerCorrect = True
 
     while lowerCorrect is False:
-        number = random.randint(pow(10, answers[0] - 1), answers[2])
+        number = random.randint(pow(10, answers[0] - 1), pow(10, answers[0]) - 1)
         response = input(allQuestions[3].getTitle() + " " + str(number) + " (y/n)?: ")
 
         if response is "y" or response is "n":
@@ -104,5 +106,5 @@ class Questionaire:
 
         # Ask the user for responses
         askForResponses(self.questions, self.answers)
-
+        print(self.answers)
         return self.answers

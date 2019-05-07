@@ -1,10 +1,15 @@
-class Tree:
-    nodes = []
-    deep = 0
+import bin.thinker.model.node as nd
 
-    def __init__(self, nodes, deep):
+class Tree:
+
+    nodes = nd.Node([], 0, 0)
+    actualDeep = 0
+    maxDeep = 0
+
+    def __init__(self, nodes, actualDeep, maxDeep):
         self.nodes = nodes
-        self.deep = deep
+        self.actualDeep = actualDeep
+        self.maxDeep = maxDeep
 
     # def addNodes
     # def deleteNodes
@@ -21,3 +26,9 @@ class Tree:
 
     def getDeep(self):
         return self.deep
+
+    def setMaxDeep(self, maxDeep):
+        self.maxDeep = maxDeep
+
+    def getMaxDeep(self):
+        return self.maxDeep
