@@ -37,6 +37,8 @@ def askToUserShot():
 
         if len(str(response)) == 4:
             hasFourDigits = True
+        else:
+            print("The number has " + str(len(str(response))) + " digits, not 4")
 
     return response
 

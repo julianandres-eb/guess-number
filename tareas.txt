@@ -1,0 +1,3 @@
+ - Shell interactivo
+ - Empezar a escribir el readme (Versiones de las cosas, entorno usado, ejemplos, como compilar el programa, como ejecutarlo, algunas fotos)
+ - Make
