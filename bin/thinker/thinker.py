@@ -1,4 +1,5 @@
-import
+import bin.thinker.core as core
+
 def main():
 
     # Instructions and Rules
@@ -12,6 +13,7 @@ def main():
     print("------------------------------------------------------------------------------------")
 
     print("As we said before, we need to know something to start our process, let's help us!")
+
 
 
 if __name__ == '__main__':
