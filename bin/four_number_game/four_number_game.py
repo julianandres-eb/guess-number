@@ -1,7 +1,6 @@
 # Imports
 import random
 import numpy as np
-import core
 
 # Auxiliar Functions
 

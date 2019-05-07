@@ -8,6 +8,8 @@
  con algun diccionario y una clase
 
  # thinker
+
+  - CORREGIR PREGUNTAR DE SALIDA
   - Instructions (and rules)
   - Show options
 
