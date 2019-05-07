@@ -1,7 +1,6 @@
 # Imports
 import random
 import numpy as np
-# Constants
 
 # Auxiliar Functions
 
@@ -15,6 +14,8 @@ def findRepeat(numbers):
         seen.add(num)
     return False
 
+# Method that generates a number between 1000 and 9000 and verifies that there's
+# repeated number on the 4 digits
 def generateNumber():
     hasNoRepeatedNumbers = False
     generatedNumber = 0
@@ -25,6 +26,8 @@ def generateNumber():
 
     return generatedNumber
 
+# Method that asks to user for any idea of the correct numbers verifying
+# that it has 4 digits
 def askToUserShot():
     hasFourDigits = False
     response = 0
@@ -59,7 +62,7 @@ def calculateCorrectAndRegular(shot, correctNumber):
 
 # Instructions
 # -------------------------------------------------------------------------
-# Welcome to "Thinker", our "tiny" game to guess which number we're hiding to you
+# Welcome to "4NG", our "tiny" game to guess which number we're hiding to you
 # Let's get started!
 
 # The instructions are the following:
@@ -77,9 +80,8 @@ def calculateCorrectAndRegular(shot, correctNumber):
 # -------------------------------------------------------------------------
 
 # Variables
-
 guessing = False # Variable used to continue (or finish) the guessing process
-numberToGuess = 1234 # generateNumber()
+numberToGuess = generateNumber()
 
 while guessing is False:
 
