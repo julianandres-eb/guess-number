@@ -10,6 +10,8 @@
  # thinker
 
   - CORREGIR PREGUNTAR DE SALIDA
+  - CORREGIR RUTA DE ARCHIVO DE PREGUNTAS
+  - HACER PRIVATE VALORES DE TITLE Y RESPONSE
   - Instructions (and rules)
   - Show options
 
