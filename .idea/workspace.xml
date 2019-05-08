@@ -2,14 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="63fd165f-a8b4-48fb-a55b-7997b6de9440" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/bin/thinker/model/tree/app.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/four_number_game/auxiliarFunctions/auxiliarFunctions.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/thinker/core/core.py" beforeDir="false" afterPath="$PROJECT_DIR$/bin/thinker/core/core.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/thinker/core/questions/question.py" beforeDir="false" afterPath="$PROJECT_DIR$/bin/thinker/core/questions/question.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/thinker/core/treegenerator/treegenerator.py" beforeDir="false" afterPath="$PROJECT_DIR$/bin/thinker/core/treegenerator/treegenerator.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/thinker/model/node.py" beforeDir="false" afterPath="$PROJECT_DIR$/bin/thinker/model/tree/node.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/thinker/model/tree.py" beforeDir="false" afterPath="$PROJECT_DIR$/bin/thinker/model/tree/tree.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tareas.txt" beforeDir="false" afterPath="$PROJECT_DIR$/tareas.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/four_number_game/four_number_game.py" beforeDir="false" afterPath="$PROJECT_DIR$/bin/four_number_game/four_number_game.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/four_number_game/four_number_game_unit_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/bin/four_number_game/auxiliarFunctions/test_auxiliarFunctions.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/thinker/console.py" beforeDir="false" afterPath="$PROJECT_DIR$/bin/thinker/main.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -20,56 +17,43 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tareas.txt">
+        <entry file="file://$USER_HOME$/Escritorio/tareas.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="190">
-              <caret line="18" column="34" selection-start-line="18" selection-start-column="34" selection-end-line="18" selection-end-column="34" />
+            <state relative-caret-position="30">
+              <caret line="2" column="16" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="16" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/bin/thinker/console.py">
+        <entry file="file://$PROJECT_DIR$/bin/four_number_game/auxiliarFunctions/auxiliarFunctions.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" column="67" selection-start-line="11" selection-start-column="67" selection-end-line="11" selection-end-column="67" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/bin/thinker/core/core.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="15" selection-start-line="15" selection-end-line="15" />
+            <state relative-caret-position="85">
+              <caret line="46" column="30" selection-start-line="46" selection-start-column="4" selection-end-line="46" selection-end-column="30" />
               <folding>
-                <element signature="e#0#48#0" expanded="true" />
+                <element signature="e#0#13#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/bin/thinker/core/treegenerator/treegenerator.py">
+        <entry file="file://$PROJECT_DIR$/bin/four_number_game/auxiliarFunctions/test_auxiliarFunctions.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="239">
-              <caret line="41" column="14" selection-start-line="41" selection-start-column="14" selection-end-line="41" selection-end-column="14" />
+            <state relative-caret-position="585">
+              <caret line="39" lean-forward="true" selection-start-line="39" selection-end-line="39" />
               <folding>
-                <element signature="e#223#250#0" />
-                <element signature="e#262#418#0" />
+                <element signature="e#10#25#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/bin/thinker/core/questions/question.py">
+        <entry file="file://$PROJECT_DIR$/bin/four_number_game/four_number_game.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="568">
-              <caret line="101" column="31" lean-forward="true" selection-start-line="101" selection-start-column="31" selection-end-line="101" selection-end-column="31" />
-              <folding>
-                <element signature="e#0#10#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="115">
+              <caret line="21" column="16" lean-forward="true" selection-start-line="21" selection-start-column="16" selection-end-line="21" selection-end-column="16" />
             </state>
           </provider>
         </entry>
@@ -103,7 +87,6 @@
         <option value="$PROJECT_DIR$/bin/prueba/main.py" />
         <option value="$PROJECT_DIR$/bin/four_number_game/four_number_game_unit_test.py" />
         <option value="$PROJECT_DIR$/bin/thinker/thinker.py" />
-        <option value="$PROJECT_DIR$/bin/four_number_game/four_number_game.py" />
         <option value="$PROJECT_DIR$/bin/thinker/console.py" />
         <option value="$PROJECT_DIR$/bin/thinker/core/question.py" />
         <option value="$PROJECT_DIR$/bin/thinker/core/questions/allQuestions.txt" />
@@ -117,6 +100,11 @@
         <option value="$PROJECT_DIR$/bin/thinker/core/core.py" />
         <option value="$PROJECT_DIR$/tareas.txt" />
         <option value="$PROJECT_DIR$/bin/thinker/core/treegenerator/treegenerator.py" />
+        <option value="$USER_HOME$/Escritorio/tareas.txt" />
+        <option value="$PROJECT_DIR$/bin/four_number_game/four_number_game.py" />
+        <option value="$PROJECT_DIR$/bin/four_number_game/auxiliarFunctions.py" />
+        <option value="$PROJECT_DIR$/bin/four_number_game/auxiliarFunctions/auxiliarFunctions.py" />
+        <option value="$PROJECT_DIR$/bin/four_number_game/auxiliarFunctions/test_auxiliarFunctions.py" />
       </list>
     </option>
   </component>
@@ -132,7 +120,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -149,52 +136,37 @@
               <item name="eventbrite" type="b2602c69:ProjectViewProjectNode" />
               <item name="eventbrite" type="462c0819:PsiDirectoryNode" />
               <item name="bin" type="462c0819:PsiDirectoryNode" />
-              <item name="thinker" type="462c0819:PsiDirectoryNode" />
+              <item name="four_number_game" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="eventbrite" type="b2602c69:ProjectViewProjectNode" />
               <item name="eventbrite" type="462c0819:PsiDirectoryNode" />
               <item name="bin" type="462c0819:PsiDirectoryNode" />
-              <item name="thinker" type="462c0819:PsiDirectoryNode" />
-              <item name="core" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="eventbrite" type="b2602c69:ProjectViewProjectNode" />
-              <item name="eventbrite" type="462c0819:PsiDirectoryNode" />
-              <item name="bin" type="462c0819:PsiDirectoryNode" />
-              <item name="thinker" type="462c0819:PsiDirectoryNode" />
-              <item name="core" type="462c0819:PsiDirectoryNode" />
-              <item name="questions" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="eventbrite" type="b2602c69:ProjectViewProjectNode" />
-              <item name="eventbrite" type="462c0819:PsiDirectoryNode" />
-              <item name="bin" type="462c0819:PsiDirectoryNode" />
-              <item name="thinker" type="462c0819:PsiDirectoryNode" />
-              <item name="core" type="462c0819:PsiDirectoryNode" />
-              <item name="treegenerator" type="462c0819:PsiDirectoryNode" />
+              <item name="four_number_game" type="462c0819:PsiDirectoryNode" />
+              <item name="auxiliarFunctions" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Escritorio/sudokus" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Escritorio/tareas.txt" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/bin/prueba" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/bin/four_number_game/auxiliarFunctions" />
       <recent name="$PROJECT_DIR$/bin/thinker/model/tree" />
       <recent name="$PROJECT_DIR$/bin/thinker/core/treegenerator" />
       <recent name="$PROJECT_DIR$/bin/thinker/core/questions" />
       <recent name="$PROJECT_DIR$/bin/thinker/hhhhh" />
-      <recent name="$PROJECT_DIR$/bin/prueba/herp" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/bin/prueba" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -209,7 +181,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.thinker">
+  <component name="RunManager" selected="Python tests.Unittests in test_auxiliarFunctions.py">
     <configuration name="four_number_game" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="eventbrite" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -243,7 +215,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/bin/thinker/console.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/bin/thinker/main.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -252,12 +224,28 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="Unittests in test_auxiliarFunctions.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <module name="eventbrite" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/bin/four_number_game/auxiliarFunctions" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/bin/four_number_game/auxiliarFunctions/test_auxiliarFunctions.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
     <list>
       <item itemvalue="Python.thinker" />
       <item itemvalue="Python.four_number_game" />
+      <item itemvalue="Python tests.Unittests in test_auxiliarFunctions.py" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python tests.Unittests in test_auxiliarFunctions.py" />
         <item itemvalue="Python.four_number_game" />
       </list>
     </recent_temporary>
@@ -275,6 +263,38 @@
     </task>
     <servers />
   </component>
+  <component name="TestHistory">
+    <history-entry file="Unittests_in_test_auxiliarFunctions_py - 2019.05.08 at 17h 41m 53s.xml">
+      <configuration name="Unittests in test_auxiliarFunctions.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_test_auxiliarFunctions_py - 2019.05.08 at 17h 42m 18s.xml">
+      <configuration name="Unittests in test_auxiliarFunctions.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_test_auxiliarFunctions_py - 2019.05.08 at 17h 42m 27s.xml">
+      <configuration name="Unittests in test_auxiliarFunctions.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_test_auxiliarFunctions_py - 2019.05.08 at 17h 42m 44s.xml">
+      <configuration name="Unittests in test_auxiliarFunctions.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_test_auxiliarFunctions_py - 2019.05.08 at 17h 44m 33s.xml">
+      <configuration name="Unittests in test_auxiliarFunctions.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_test_auxiliarFunctions_py - 2019.05.08 at 17h 45m 49s.xml">
+      <configuration name="Unittests in test_auxiliarFunctions.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_test_auxiliarFunctions_py - 2019.05.08 at 17h 46m 10s.xml">
+      <configuration name="Unittests in test_auxiliarFunctions.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_test_auxiliarFunctions_py - 2019.05.08 at 17h 46m 23s.xml">
+      <configuration name="Unittests in test_auxiliarFunctions.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_test_auxiliarFunctions_py - 2019.05.08 at 17h 51m 46s.xml">
+      <configuration name="Unittests in test_auxiliarFunctions.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_test_auxiliarFunctions_py - 2019.05.08 at 17h 52m 16s.xml">
+      <configuration name="Unittests in test_auxiliarFunctions.py" configurationId="tests" />
+    </history-entry>
+  </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
       <is-autoscroll-to-source value="true" />
@@ -288,12 +308,12 @@
     <frame x="67" y="25" width="1299" height="743" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.09417398" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.023942538" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.048859935" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.18729642" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.117263846" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3713355" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -309,13 +329,13 @@
       <window_info anchor="right" id="R Packages" order="4" />
     </layout>
     <layout-to-restore>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23383878" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.023942538" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.30456027" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.048859935" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.1514658" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.3713355" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32899022" />
@@ -385,28 +405,6 @@
     <entry file="file://$PROJECT_DIR$/bin/prueba/herp/derp/__init__.py" />
     <entry file="file://$PROJECT_DIR$/bin/prueba/herp/derp/yolo.py" />
     <entry file="file://$PROJECT_DIR$/bin/prueba/main.py" />
-    <entry file="file://$PROJECT_DIR$/bin/four_number_game/four_number_game_unit_test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="15" selection-start-line="1" selection-start-column="15" selection-end-line="1" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bin/four_number_game/four_number_game.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-165">
-          <caret line="17" column="33" selection-start-line="17" selection-start-column="33" selection-end-line="17" selection-end-column="33" />
-          <folding>
-            <element signature="e#10#23#0" expanded="true" />
-            <element signature="e#44#64#0" />
-            <element signature="e#223#346#0" />
-            <element signature="e#489#763#0" />
-            <element signature="e#886#1202#0" />
-            <element signature="e#1262#1870#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/bin/thinker/core/__init__.py" />
     <entry file="file://$PROJECT_DIR$/bin/thinker/core/questions/allQuestions.txt" />
     <entry file="file://$PROJECT_DIR$/bin/thinker/core/questions/listQuestions.csv">
@@ -430,13 +428,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tareas.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="18" column="34" selection-start-line="18" selection-start-column="34" selection-end-line="18" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/bin/thinker/model/tree/app.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
@@ -444,20 +435,41 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/bin/thinker/core/treegenerator/treegenerator.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="615">
+          <caret line="41" column="14" selection-start-line="41" selection-start-column="14" selection-end-line="41" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/bin/thinker/core/questions/question.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="568">
-          <caret line="101" column="31" lean-forward="true" selection-start-line="101" selection-start-column="31" selection-end-line="101" selection-end-column="31" />
+        <state relative-caret-position="1500">
+          <caret line="101" column="31" selection-start-line="101" selection-start-column="31" selection-end-line="101" selection-end-column="31" />
           <folding>
             <element signature="e#0#10#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/bin/thinker/console.py">
+    <entry file="file://$PROJECT_DIR$/tareas.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="34" selection-start-line="18" selection-start-column="34" selection-end-line="18" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bin/thinker/main.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
-          <caret line="11" column="67" selection-start-line="11" selection-start-column="67" selection-end-line="11" selection-end-column="67" />
+          <caret line="11" column="40" selection-start-line="11" selection-start-column="40" selection-end-line="11" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Escritorio/tareas.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="16" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="16" />
         </state>
       </provider>
     </entry>
@@ -471,13 +483,29 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/bin/thinker/core/treegenerator/treegenerator.py">
+    <entry file="file://$PROJECT_DIR$/bin/four_number_game/auxiliarFunctions/auxiliarFunctions.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="239">
-          <caret line="41" column="14" selection-start-line="41" selection-start-column="14" selection-end-line="41" selection-end-column="14" />
+        <state relative-caret-position="85">
+          <caret line="46" column="30" selection-start-line="46" selection-start-column="4" selection-end-line="46" selection-end-column="30" />
           <folding>
-            <element signature="e#223#250#0" />
-            <element signature="e#262#418#0" />
+            <element signature="e#0#13#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bin/four_number_game/four_number_game.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="21" column="16" lean-forward="true" selection-start-line="21" selection-start-column="16" selection-end-line="21" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bin/four_number_game/auxiliarFunctions/test_auxiliarFunctions.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="585">
+          <caret line="39" lean-forward="true" selection-start-line="39" selection-end-line="39" />
+          <folding>
+            <element signature="e#10#25#0" expanded="true" />
           </folding>
         </state>
       </provider>
