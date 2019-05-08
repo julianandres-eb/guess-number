@@ -93,18 +93,24 @@ def askForResponses(allQuestions, answers):
 
 
 class Questionaire:
-    questions = []
-    answers = []
+    _questions = []
+    _answers = []
 
     def __init__(self):
         self.initQuestionaire()
 
     def initQuestionaire(self):
 
-        if len(self.questions) is 0:
-            self.questions = createQuestions()
+        if len(self._questions) is 0:
+            self._questions = createQuestions()
 
         # Ask the user for responses
-        askForResponses(self.questions, self.answers)
-        print(self.answers)
-        return self.answers
+        askForResponses(self._questions, self._answers)
+
+
+    def getAnswers(self):
+        return self._answers
+
+    def setAnswers(self, ans):
+        self._answers = ans
+
