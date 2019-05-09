@@ -1,30 +1,34 @@
-import bin.four_number_game.four_number_game as fG
+import bin.four_number_game.four_number_game as fg
 import bin.thinker.main as tk
+
 import time
 
-print("------------------------------------------------------------------------------------")
+def main():
 
-print("Select a game")
-print("1. Guess our Number")
-print("2. Thinker: We (try to) guess your number")
+    print("------------------------------------------------------------------------------------")
 
-correct = False
+    print("Select a game")
+    print("1. Guess our Number")
+    print("2. Thinker: We (try to) guess your number")
 
-while correct is False:
-    index = input("> ")
-    if index is "1":
-        correct = True
-        time.sleep(1.0)
-        fG.main()
+    correct = False
 
-    if index is "2":
-        correct = False
-        time.sleep(1.0)
-        tk.main()
+    while correct is False:
+        index = input("> ")
+        if index is "1":
+            correct = True
+            time.sleep(1.0)
+            fg.main()
 
-    print("It's not correct, try again")
+        if index is "2":
+            correct = False
+            time.sleep(1.0)
+            tk.main()
 
+        print("It's not correct, try again")
 
+if __name__ == "__main__":
+    main()
 
 
 
