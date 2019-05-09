@@ -39,5 +39,6 @@ def main():
         else:
             print("Good " + str(calculate[0]) + ", Regular " + str(calculate[1]))
 
+
 if __name__ == "__main__":
     main()

@@ -1,4 +1,4 @@
-from anytree import Node, RenderTree
+from anytree import Node
 
 class TreesGenerator:
     _treePossibleNumber = Node("0")

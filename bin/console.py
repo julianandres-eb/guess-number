@@ -1,6 +1,5 @@
 import bin.four_number_game.four_number_game as fg
-import bin.thinker.main as tk
-
+import bin.thinker.thinker as tk
 import time
 
 def main():
