@@ -25,6 +25,7 @@ share/python-wheels/
 *.egg-info/
 .installed.cfg
 *.egg
+.idea/
 MANIFEST
 
 # PyInstaller
@@ -120,3 +121,13 @@ venv.bak/
 dmypy.json
 
 # Pyre type checker
+
+.idea/eventbrite.iml
+.idea/misc.xml
+.idea/workspace.xml
+bin/four_number_game/__pycache__/four_number_game.cpython-36.pyc
+bin/four_number_game/auxiliarFunctions/__pycache__/auxiliarFunctions.cpython-36.pyc
+bin/thinker/__pycache__/main.cpython-36.pyc
+bin/thinker/core/__pycache__/core.cpython-36.pyc
+bin/thinker/core/treegenerator/__pycache__/treegenerator.cpython-36.pyc
+
