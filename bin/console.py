@@ -13,21 +13,20 @@ def main():
     correct = False
 
     while correct is False:
-        index = input("> ")
+        index = input("> (e to exit) ")
         if index is "1":
-            correct = True
             time.sleep(1.0)
             fg.main()
 
         if index is "2":
-            correct = False
             time.sleep(1.0)
             tk.main()
 
-        print("It's not correct, try again")
+        if index is "e":
+            correct = True
+
+        if index is not "1" and index is not "2" and index is not "e":
+            print("It's not correct, try again")
 
 if __name__ == "__main__":
     main()
-
-
-

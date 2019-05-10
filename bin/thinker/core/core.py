@@ -1,23 +1,27 @@
-import bin.thinker.core.questions.question as qt
-import bin.thinker.core.treegenerator.treegenerator as tg
-
+import bin.thinker.core.questions.questionnaire as qt
+import bin.thinker.core.numbergenerator.numbergenerator as tg
 
 def main():
 
     guessing = False
 
     while guessing is False:
-
         # Do questions!
-        answers = qt.Questionaire()
+        questionnaire = qt.Questionnaire()
+        questionnaire.initQuestionaire()
+        answers = questionnaire.askForResponses()
 
-        # Generate 2 trees (Possible number and No possible numbers) from answers
-        trees = tg.TreesGenerator(answers.getAnswers())
+        # Generate number
+        possibleNumber = tg.NumberGenerator(answers).generateNumbers()
 
-        # Resolver arbol y generar un numero tentativo de respuesta
-        supposedNumber = 1234
+        # Format list of string to int
+        possibleNumber = int(''.join(str(i) for i in possibleNumber))
 
-        response = input("Is " + str(supposedNumber) + " correct(y/n)?: ")
+        response = input("Is " + str(int(possibleNumber)) + " correct(y/n)?: ")
+
         if response is "y":
             guessing = True
             print("We win!")
+        else:
+            guessing = True
+            print("Game Over")
