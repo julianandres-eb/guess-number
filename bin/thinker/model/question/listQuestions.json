@@ -1,0 +1,17 @@
+{
+  "digits": {
+    "key": "digits",
+    "value" : "How many digits has the number",
+    "reiterable" : "n"
+  },
+    "position": {
+      "key": "position",
+      "value" : "Which number is in position",
+      "reiterable" : "y"
+    },
+    "between": {
+      "key": "between",
+      "value" : "Is the number between",
+      "reiterable" : "y"
+  }
+}

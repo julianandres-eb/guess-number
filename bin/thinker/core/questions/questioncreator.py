@@ -1,33 +1,33 @@
-import csv
-
-filename = "/home/jagadru/PycharmProjects/eventbrite/bin/thinker/core/questions/listQuestions.csv"
+import csv, os, json
 
 class question:
     title = ""
-    response = ""
 
-    def __init__(self, title, response):
+    def __init__(self, title):
         self.setTitle(title)
-        self.setResponse(response)
 
     def setTitle(self, title):
         self.title = title
 
-    def setResponse(self, response):
-        self.response = response
-
     def getTitle(self):
         return self.title
 
-    def getResponse(self):
-        return self.response
-
     def createQuestions():
-        # Create Questions from File
+        #with open(os.getcwd() + "/thinker/core/questions/listQuestions.csv", 'r') as JSON:
+        #    dict = json.load(JSON)
 
+        # Now you can use it like dictionary
+        # For example:
+
+        #print(dict["username"])
+
+
+
+        # Create Questions from File
         # - Read file and generate a list
-        file = open(filename, 'r')
+        file = open(os.getcwd() + "/thinker/core/questions/listQuestions.csv", 'r')
         reader = csv.reader(file)
+        print(reader[0])
         allQuestions = [row for row in reader]
 
         questionsToReturn = []
