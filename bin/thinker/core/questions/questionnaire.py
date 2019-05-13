@@ -1,69 +1,73 @@
 import random
 
-from .question import question as q
+from .questionsgenerator import QuestionsGenerator
+from .questionsolver.questionsolverdigits import *
+from .questionsolver.questionsolverposition import *
+from .questionsolver.questionsolverbetween import *
+from .questionsolver.questionsolvermod import *
 
 class Questionnaire:
     _questions = []
-    _answers = []
+    answers = {}
 
     def __init__(self):
         self.initQuestionaire()
 
     def initQuestionaire(self):
 
-        if len(self._questions) is 0:
-            self._questions = q.createQuestions()
+        if not bool(self._questions):
+            self._questions = QuestionsGenerator().getQuestions()
 
-    def getAnswers(self):
-        return self._answers
+    def ask(self, question):
 
-    def setAnswers(self, ans):
-        self._answers = ans
+        solver = self.getSolver(question)
+        correct = False
+        answer = []
+
+        while correct is False:
+            value = solver.askUserValue()
+            answer = solver.composeAnswer(value)
+            if solver.validateAnswer(answer):
+                answer = solver.saveAnswer(answer)
+                correct = True
+            else:
+                print("It's not a valid answer")
+
+        return answer
 
     def askForResponses(self):
 
-        digitsCorrect = False
-        positionCorrect = False
-        limitCorrect = False
+        if self.canContinue():
+            for question in self._questions:
+                if question.getReiterable() is "n":
+                    if len(question.getAnswers()) is 0:
+                        self.answers[question.key] = self.ask(question)
+                else:
+                    self.answers[question.key] = self.ask(question)
 
-        while digitsCorrect is False:
-            digits = int(input(self._questions[0].getTitle() + "?: "))
-            if digits > 0:
-                self._answers.append(digits)
-                digitsCorrect = True
+        return self.answers
 
-        while positionCorrect is False:
-            position = random.randint(1, self._answers[0])
-            number = int(input(self._questions[1].getTitle() + " " + str(position) + "?: "))
-            if number > 0:
-                self._answers.append(position)
-                self._answers.append(number)
-                positionCorrect = True
+    def composeNameClass(self, key):
+        return "QuestionSolver" + key.capitalize()
 
-        len(self._answers)
-        while limitCorrect is False:
+    def getSolver(self, question):
+        return globals()[self.composeNameClass(question.key)](question)
 
-            correct = False
-            lowLimit = bigLimit = 0
+    def canContinue(self):
+        digits = 0
+        positions = []
+        for question in self._questions:
+           if len(question.getAnswers()) > 0:
+               if question.getKey() is "digits":
+                   digits = question.getAnswers()[0]
 
-            while correct is False:
-                lowLimit = random.randint(pow(10, self._answers[0] - 1), pow(10, self._answers[0]) - 1)
+               if question.getKey() is "position":
+                    positions = question.getAnswers()
 
-                if self._answers[1] == 1:
-                    lowLimit = random.randint(self._answers[2] * pow(10, self._answers[0] - 1), pow(10, self._answers[0]) - 1)
-
-                bigLimit = random.randint(pow(10, self._answers[0] - 1), pow(10, self._answers[0]) - 1)
-
-                if lowLimit < bigLimit:
-                    correct = True
-
-            response = input(self._questions[2].getTitle() + " " + str(lowLimit) + " and " + str(bigLimit) + " (y/n)?: ")
-
-            if response is "y":
-                self._answers.append(lowLimit)
-                self._answers.append(bigLimit)
-                limitCorrect = True
-            else:
-                print("Try again")
-
-        return self._answers
+           if len(positions) is 0 and digits is 0:
+               return True
+           else:
+               if len(positions) is not digits:
+                   return True
+               else:
+                   return False

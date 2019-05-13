@@ -4,14 +4,19 @@
     "value" : "How many digits has the number",
     "reiterable" : "n"
   },
-    "position": {
-      "key": "position",
-      "value" : "Which number is in position",
+  "mod": {
+      "key": "mod",
+      "value" : "Is the number divisible by",
       "reiterable" : "y"
-    },
-    "between": {
+      },
+  "between": {
       "key": "between",
       "value" : "Is the number between",
       "reiterable" : "y"
-  }
+  },
+  "position": {
+      "key": "position",
+      "value" : "Which number is in position",
+      "reiterable" : "y"
+    }
 }

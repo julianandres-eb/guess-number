@@ -1,4 +1,4 @@
-import bin.thinker.core.core as core
+from bin.thinker.core.core import Core
 
 def main():
 
@@ -15,7 +15,11 @@ def main():
 
     print("As we said before, we need to know something to start our process, let's help us!")
 
-    core.main()
+    ended = False
+    while ended is False:
+        core = Core()
+        if not core.main():
+            ended = True
 
 
 if __name__ == '__main__':

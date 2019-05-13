@@ -1,27 +1,31 @@
 import bin.thinker.core.questions.questionnaire as qt
 import bin.thinker.core.numbergenerator.numbergenerator as tg
 
-def main():
+class Core:
 
-    guessing = False
+    def __init__(self):
+        pass
 
-    while guessing is False:
+    def main(self):
+
+        guessing: bool = False
+
         # Do questions!
         questionnaire = qt.Questionnaire()
-        questionnaire.initQuestionaire()
-        answers = questionnaire.askForResponses()
 
-        # Generate number
-        possibleNumber = tg.NumberGenerator(answers).generateNumbers()
+        while guessing is False:
+            answers = questionnaire.askForResponses()
 
-        # Format list of string to int
-        possibleNumber = int(''.join(str(i) for i in possibleNumber))
+            # Generate number
+            possibleNumber = tg.NumberGenerator(answers).generateNumbers()
+            if possibleNumber is 0:
+                break
+            else:
+                response = input("Is " + str(int(possibleNumber)) + " correct(y/n)?: ")
+                if response is "y":
+                    self.guessing = True
+                    print("We win!")
+                    return False
 
-        response = input("Is " + str(int(possibleNumber)) + " correct(y/n)?: ")
-
-        if response is "y":
-            guessing = True
-            print("We win!")
-        else:
-            guessing = True
-            print("Game Over")
+        print("We asked you almost everything but it didn't work out. Sorry")
+        return True
