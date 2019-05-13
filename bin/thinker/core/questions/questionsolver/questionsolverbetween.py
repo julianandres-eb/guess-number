@@ -1,8 +1,9 @@
 import random
+
 from .questionsolver import QuestionSolver
 
-class QuestionSolverBetween(QuestionSolver):
 
+class QuestionSolverBetween(QuestionSolver):
     lowLimit = bigLimit = 0
 
     def __init__(self, question):
@@ -20,17 +21,17 @@ class QuestionSolverBetween(QuestionSolver):
                 self.lowLimit = random.randint(pow(10, QuestionSolver.digits - 1), pow(10, QuestionSolver.digits) - 1)
                 self.bigLimit = random.randint(pow(10, QuestionSolver.digits - 1), pow(10, QuestionSolver.digits) - 1)
 
-                if  self.lowLimit < self.bigLimit:
+                if self.lowLimit < self.bigLimit:
                     correctLimit = True
 
-            value = input(self.getQuestion(self.key).getTitle() + " " + str( self.lowLimit) + " and " + str(self.bigLimit) + "? (y/n): ")
+            value = input(self.getQuestion(self.key).getTitle() + " " + str(self.lowLimit) + " and " + str(
+                self.bigLimit) + "? (y/n): ")
 
             if value is "y" or value is "n":
                 correctValue = True
                 return value
             else:
                 correctLimit = False
-
 
     def composeAnswer(self, value):
         return [self.lowLimit, self.bigLimit, value]

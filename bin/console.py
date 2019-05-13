@@ -1,9 +1,10 @@
-import bin.four_number_game.four_number_game as fg
-import bin.thinker.thinker as tk
 import time
 
-def main():
+import four_number_game.four_number_game as fg
+import thinker as tk
 
+
+def main():
     print("------------------------------------------------------------------------------------")
 
     print("Select a game")
@@ -27,6 +28,7 @@ def main():
 
         if index is not "1" and index is not "2" and index is not "e":
             print("It's not correct, try again")
+
 
 if __name__ == "__main__":
     main()

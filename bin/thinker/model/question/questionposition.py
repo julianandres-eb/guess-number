@@ -1,5 +1,6 @@
 from .question import Question
 
+
 class QuestionPosition(Question):
 
     def __init__(self, title, answers, key, reiterable):

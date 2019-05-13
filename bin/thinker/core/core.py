@@ -1,5 +1,6 @@
-import bin.thinker.core.questions.questionnaire as qt
 import bin.thinker.core.numbergenerator.numbergenerator as tg
+import bin.thinker.core.questions.questionnaire as qt
+
 
 class Core:
 

@@ -1,5 +1,6 @@
 from .questionsolver import QuestionSolver
 
+
 class QuestionSolverDigits(QuestionSolver):
 
     def askUserValue(self):

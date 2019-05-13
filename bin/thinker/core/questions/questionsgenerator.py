@@ -1,10 +1,8 @@
 import json
-from bin.thinker.utils.utils import Utils
+
 from bin.thinker.utils.singleton import Singleton
-from bin.thinker.core.questions.questionscreator.creatordigitsquestion import *
-from bin.thinker.core.questions.questionscreator.creatorpositionquestion import *
-from bin.thinker.core.questions.questionscreator.creatorbetweenquestion import *
-from bin.thinker.core.questions.questionscreator.creatormodquestion import *
+from bin.thinker.utils.utils import Utils
+
 
 class QuestionsGenerator(metaclass=Singleton):
     questions = []
@@ -25,7 +23,6 @@ class QuestionsGenerator(metaclass=Singleton):
                 questionToReturn.append(q)
                 break
         return questionToReturn
-
 
     def composeNameClass(self, key):
         return "Creator" + key.capitalize() + "Question"

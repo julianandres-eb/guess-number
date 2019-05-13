@@ -1,5 +1,6 @@
 import abc
 
+
 class QuestionCreator(metaclass=abc.ABCMeta):
     """
     Declare the factory method, which returns an object of type Question.

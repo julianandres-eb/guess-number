@@ -1,6 +1,8 @@
 import random
-from .questionsolver import QuestionSolver
+
 from bin.thinker.utils.utils import Utils
+from .questionsolver import QuestionSolver
+
 
 class QuestionSolverMod(QuestionSolver):
     mod = 0

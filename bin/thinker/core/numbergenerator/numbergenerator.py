@@ -1,5 +1,5 @@
 import random
-import itertools as it
+
 
 class NumberGenerator:
     _PossibleNumbers = []
@@ -76,7 +76,6 @@ class NumberGenerator:
                     return True and self.evaluateMod(value, answers[1:])
         else:
             return True
-
 
     def _initPossibleNumber(self, answers):
 

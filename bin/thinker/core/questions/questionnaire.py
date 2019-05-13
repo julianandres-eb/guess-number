@@ -1,11 +1,3 @@
-import random
-
-from .questionsgenerator import QuestionsGenerator
-from .questionsolver.questionsolverdigits import *
-from .questionsolver.questionsolverposition import *
-from .questionsolver.questionsolverbetween import *
-from .questionsolver.questionsolvermod import *
-
 class Questionnaire:
     _questions = []
     answers = {}
@@ -57,17 +49,17 @@ class Questionnaire:
         digits = 0
         positions = []
         for question in self._questions:
-           if len(question.getAnswers()) > 0:
-               if question.getKey() is "digits":
-                   digits = question.getAnswers()[0]
+            if len(question.getAnswers()) > 0:
+                if question.getKey() is "digits":
+                    digits = question.getAnswers()[0]
 
-               if question.getKey() is "position":
+                if question.getKey() is "position":
                     positions = question.getAnswers()
 
-           if len(positions) is 0 and digits is 0:
-               return True
-           else:
-               if len(positions) is not digits:
-                   return True
-               else:
-                   return False
+            if len(positions) is 0 and digits is 0:
+                return True
+            else:
+                if len(positions) is not digits:
+                    return True
+                else:
+                    return False

@@ -1,8 +1,8 @@
-from .questioncreator import QuestionCreator
 from bin.thinker.model.question.questionposition import QuestionPosition
+from .questioncreator import QuestionCreator
+
 
 class CreatorPositionQuestion(QuestionCreator):
-
     """
     Override the factory method to return an instance of a
     QuestionPosition.

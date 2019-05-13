@@ -1,6 +1,8 @@
 # IMPORTS
 import unittest
+
 import bin.four_number_game.auxiliarFunctions.auxiliarFunctions as auxF
+
 
 class TestAuxiliarFunctions(unittest.TestCase):
 

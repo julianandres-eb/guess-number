@@ -1,5 +1,7 @@
 import random
+
 import numpy as np
+
 
 # Auxiliar Functions
 
@@ -14,6 +16,7 @@ def findRepeat(numbers):
         seen.add(num)
     return False
 
+
 # Method that generates a number between 1000 and 9000 and verifies that there's
 # repeated number on the 4 digits
 
@@ -26,6 +29,7 @@ def generateNumber():
             hasNoRepeatedNumbers = True
 
     return generatedNumber
+
 
 # Method that asks to user for any idea of the correct numbers verifying
 # that it has 4 digits
@@ -43,9 +47,9 @@ def askToUserShot():
 
     return response
 
+
 # Method that returns how many "corrects" and "regulars" are
 def calculateCorrectAndRegular(shot, correctNumber):
-
     # Convert to use them with np.sum
     _shot = np.array([int(x) for x in str(shot)])
     _correctNumber = np.array([int(x) for x in str(correctNumber)])

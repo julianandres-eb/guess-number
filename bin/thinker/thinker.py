@@ -1,7 +1,7 @@
 from bin.thinker.core.core import Core
 
-def main():
 
+def main():
     # Instructions and Rules
     print("------------------------------------------------------------------------------------")
     print("Welcome to 'Thinker', our 'tiny' game that guesses numbers from the user")

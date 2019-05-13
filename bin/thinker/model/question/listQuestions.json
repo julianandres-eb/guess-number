@@ -1,22 +1,22 @@
 {
   "digits": {
     "key": "digits",
-    "value" : "How many digits has the number",
-    "reiterable" : "n"
+    "value": "How many digits has the number",
+    "reiterable": "n"
   },
   "mod": {
-      "key": "mod",
-      "value" : "Is the number divisible by",
-      "reiterable" : "y"
-      },
+    "key": "mod",
+    "value": "Is the number divisible by",
+    "reiterable": "y"
+  },
   "between": {
-      "key": "between",
-      "value" : "Is the number between",
-      "reiterable" : "y"
+    "key": "between",
+    "value": "Is the number between",
+    "reiterable": "y"
   },
   "position": {
-      "key": "position",
-      "value" : "Which number is in position",
-      "reiterable" : "y"
-    }
+    "key": "position",
+    "value": "Which number is in position",
+    "reiterable": "y"
+  }
 }

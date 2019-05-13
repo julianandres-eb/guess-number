@@ -1,9 +1,9 @@
 import random
+
 from .questionsolver import QuestionSolver
-from bin.thinker.core.questions.questionsgenerator import QuestionsGenerator
+
 
 class QuestionSolverPosition(QuestionSolver):
-
     position = 0
 
     def askUserValue(self):
