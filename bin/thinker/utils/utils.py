@@ -7,7 +7,7 @@ class Utils:
         pass
 
     def getQuestionsPath():
-        return os.getcwd() + "/model/question/listQuestions.json"
+        return os.getcwd() + "/thinker/model/question/listQuestions.json"
 
     def primes(self, n):
         primes = [2]

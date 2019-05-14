@@ -6,7 +6,7 @@ from .questionsolver import QuestionSolver
 class QuestionSolverPosition(QuestionSolver):
     position = 0
 
-    def askUserValue(self):
+    def askUserValue(self, oldResponses):
         correctValue = False
         positionCorrect = False
         value = 0

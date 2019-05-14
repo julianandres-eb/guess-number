@@ -2,7 +2,12 @@ import json
 
 from bin.thinker.utils.singleton import Singleton
 from bin.thinker.utils.utils import Utils
-
+from bin.thinker.core.questions.questionscreator.questioncreator import QuestionCreator
+from bin.thinker.core.questions.questionscreator.creatordigitsquestion import CreatorDigitsQuestion
+from bin.thinker.core.questions.questionscreator.creatorpositionquestion import CreatorPositionQuestion
+from bin.thinker.core.questions.questionscreator.creatorbetweenquestion import CreatorBetweenQuestion
+from bin.thinker.core.questions.questionscreator.creatormodquestion import CreatorModQuestion
+from bin.thinker.core.questions.questionscreator.creatorgoodregularquestion import CreatorGoodregularQuestion
 
 class QuestionsGenerator(metaclass=Singleton):
     questions = []

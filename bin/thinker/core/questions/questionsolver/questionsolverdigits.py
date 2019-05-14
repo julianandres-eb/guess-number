@@ -3,7 +3,7 @@ from .questionsolver import QuestionSolver
 
 class QuestionSolverDigits(QuestionSolver):
 
-    def askUserValue(self):
+    def askUserValue(self, oldResponses):
         correctValue = False
         value = 0
         while correctValue is False:

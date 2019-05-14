@@ -1,6 +1,15 @@
+from .questionsgenerator import QuestionsGenerator
+
+from bin.thinker.core.questions.questionsolver.questionsolvermod import QuestionSolverMod
+from bin.thinker.core.questions.questionsolver.questionsolverbetween import QuestionSolverBetween
+from bin.thinker.core.questions.questionsolver.questionsolverposition import QuestionSolverPosition
+from bin.thinker.core.questions.questionsolver.questionsolverdigits import QuestionSolverDigits
+from bin.thinker.core.questions.questionsolver.questionsolvergoodregular import QuestionSolverGoodregular
+
 class Questionnaire:
     _questions = []
     answers = {}
+    oldResponses = []
 
     def __init__(self):
         self.initQuestionaire()
@@ -17,7 +26,7 @@ class Questionnaire:
         answer = []
 
         while correct is False:
-            value = solver.askUserValue()
+            value = solver.askUserValue(self.oldResponses)
             answer = solver.composeAnswer(value)
             if solver.validateAnswer(answer):
                 answer = solver.saveAnswer(answer)
@@ -27,7 +36,9 @@ class Questionnaire:
 
         return answer
 
-    def askForResponses(self):
+    def askForResponses(self, oldResponses):
+
+        self.oldResponses = oldResponses
 
         if self.canContinue():
             for question in self._questions:

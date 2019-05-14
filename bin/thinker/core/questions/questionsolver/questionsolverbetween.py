@@ -10,7 +10,7 @@ class QuestionSolverBetween(QuestionSolver):
         super().__init__(question)
         self.lowLimit = self.bigLimit = 0
 
-    def askUserValue(self):
+    def askUserValue(self, oldResponses):
         correctValue = False
         correctLimit = False
         value = 0

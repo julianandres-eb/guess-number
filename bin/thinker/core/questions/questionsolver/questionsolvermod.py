@@ -7,7 +7,7 @@ from .questionsolver import QuestionSolver
 class QuestionSolverMod(QuestionSolver):
     mod = 0
 
-    def askUserValue(self):
+    def askUserValue(self, oldResponses):
         correctValue = False
         value = 0
         self.mod = random.choice(Utils().primes(10))

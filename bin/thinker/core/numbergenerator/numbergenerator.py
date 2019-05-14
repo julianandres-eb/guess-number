@@ -4,13 +4,15 @@ import random
 class NumberGenerator:
     _PossibleNumbers = []
     answers = []
+    oldResponses = []
 
     def __init__(self, answers):
         self.answers = answers
 
     def generateNumbers(self):
         self._PossibleNumbers = self._initPossibleNumber(self.answers)
-        return self._selectPossibleNumber(self._PossibleNumbers)
+        self.oldResponses.append(self._selectPossibleNumber(self._PossibleNumbers))
+        return self.oldResponses[-1]
 
     def addFromBoundaries(self, answers):
         listPossibleValues = []
@@ -97,3 +99,28 @@ class NumberGenerator:
             return values[random.randint(0, len(values))]
         else:
             return 0
+
+    # Method to find the first repeated value (if there's one),
+    # as it won't have to look the rest of the numbers once it finds it
+
+    def findRepeat(self, numbers):
+        seen = set()
+        for num in numbers:
+            if num in seen:
+                return True
+            seen.add(num)
+        return False
+
+
+    # Method that generates a number between 0 and pow(10, digits - 1) and verifies that there's
+    # repeated numbers
+
+    def generateNumber(self):
+        hasNoRepeatedNumbers = False
+        generatedNumber = 0
+        while hasNoRepeatedNumbers is False:
+            generatedNumber = random.randint(1000, 9999)
+            if self.findRepeat(list(str(generatedNumber))) is False:
+                hasNoRepeatedNumbers = True
+
+        return generatedNumber

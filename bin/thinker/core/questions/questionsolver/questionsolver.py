@@ -12,7 +12,7 @@ class QuestionSolver(ABC):
         self.key = question.key
 
     @abstractmethod
-    def askUserValue(self):
+    def askUserValue(self, oldResponses):
         pass
 
     @abstractmethod
