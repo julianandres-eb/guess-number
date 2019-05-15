@@ -21,7 +21,7 @@ class Core:
             # Generate number
             possibleNumber = tg.NumberGenerator(answers).generateNumbers()
             if possibleNumber is 0:
-                print("We asked you almost everything but it didn't work out. Sorry")
+                print("We can't see the real answer, try it later. Sorry")
                 return False
             else:
                 response = input("Is " + str(int(possibleNumber)) + " correct(y/n)?: ")

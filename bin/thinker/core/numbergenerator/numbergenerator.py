@@ -1,18 +1,45 @@
 import random
 
+from .numberbetweengenerator import GeneratorBetweenNumbers
+from .numberdigitsgenerator import GeneratorDigitsNumbers
+from .numbergoodregulargenerator import GeneratorGoodregularNumbers
+from .numbermodgenerator import GeneratorModNumbers
+from .numberpositiongenerator import GeneratorPositionNumbers
 
 class NumberGenerator:
-    _PossibleNumbers = []
-    answers = []
+    possibleNumbers = []
+    answers = {}
     oldResponses = []
+    questions = []
 
     def __init__(self, answers):
         self.answers = answers
 
     def generateNumbers(self):
-        self._PossibleNumbers = self._initPossibleNumber(self.answers)
-        self.oldResponses.append(self._selectPossibleNumber(self._PossibleNumbers))
-        return self.oldResponses[-1]
+
+        for key, value in self.answers.items():
+
+            generator = globals()[self.composeNameClass(key)]()
+            self.possibleNumbers = generator.generateNumbers(value, self.possibleNumbers)
+            print(key)
+            print(self.possibleNumbers)
+
+        lastPossibleNumber = self.selectPossibleNumber(self.possibleNumbers)
+        self.oldResponses.append(lastPossibleNumber)
+        return lastPossibleNumber
+
+
+
+    def composeNameClass(self, key):
+        return "Generator" + key.capitalize() + "Numbers"
+
+    def selectPossibleNumber(self, values):
+        if len(values) > 0:
+            return random.choice(values)
+        else:
+            return 0
+
+
 
     def addFromBoundaries(self, answers):
         listPossibleValues = []
@@ -30,9 +57,6 @@ class NumberGenerator:
             for i in range(lowLimit, bigLimit + 1):
                 if i not in listPossibleValues:
                     listPossibleValues.append(list(str(i)))
-
-        if len(listPossibleValues) is 0:
-            listPossibleValues = [i for i in range(pow(10, answers['digits'][0] - 1), pow(10, answers['digits'][0]))]
 
         for boundaryToDelete in boundariesToDelete:
             [lowLimit, bigLimit, _] = boundaryToDelete
@@ -93,34 +117,3 @@ class NumberGenerator:
         values = self.deleteFromMod(values, answers['mod'])
 
         return values
-
-    def _selectPossibleNumber(self, values):
-        if len(values) > 0:
-            return values[random.randint(0, len(values))]
-        else:
-            return 0
-
-    # Method to find the first repeated value (if there's one),
-    # as it won't have to look the rest of the numbers once it finds it
-
-    def findRepeat(self, numbers):
-        seen = set()
-        for num in numbers:
-            if num in seen:
-                return True
-            seen.add(num)
-        return False
-
-
-    # Method that generates a number between 0 and pow(10, digits - 1) and verifies that there's
-    # repeated numbers
-
-    def generateNumber(self):
-        hasNoRepeatedNumbers = False
-        generatedNumber = 0
-        while hasNoRepeatedNumbers is False:
-            generatedNumber = random.randint(1000, 9999)
-            if self.findRepeat(list(str(generatedNumber))) is False:
-                hasNoRepeatedNumbers = True
-
-        return generatedNumber
