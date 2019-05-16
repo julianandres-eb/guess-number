@@ -9,16 +9,17 @@
     "value": "How many digits that are good and regular has the number?",
     "reiterable": "y"
   },
+    "between": {
+    "key": "between",
+    "value": "Is the number between",
+    "reiterable": "y"
+  },
   "mod": {
     "key": "mod",
     "value": "Is the number divisible by",
     "reiterable": "y"
   },
-  "between": {
-    "key": "between",
-    "value": "Is the number between",
-    "reiterable": "y"
-  },
+
   "position": {
     "key": "position",
     "value": "Which number is in position",

@@ -4,7 +4,7 @@ class GeneratorBetweenNumbers:
         boundariesToInsert = []
         boundariesToDelete = []
 
-        for boundary in value['between']:
+        for boundary in value:
             if boundary[2] is "y":
                 boundariesToInsert.append(boundary)
             if boundary[2] is "n":
@@ -14,7 +14,7 @@ class GeneratorBetweenNumbers:
             [lowLimit, bigLimit, _] = boundaryToInsert
             for i in range(lowLimit, bigLimit + 1):
                 if i not in possibleNumbers:
-                    possibleNumbers.append(list(str(i)))
+                    possibleNumbers.append(i)
 
         for boundaryToDelete in boundariesToDelete:
             [lowLimit, bigLimit, _] = boundaryToDelete

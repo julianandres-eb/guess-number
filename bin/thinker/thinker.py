@@ -9,7 +9,6 @@ def main():
     print("- You have to choose a number and it doesn't have to have doubled numbers. For example: 1224")
     print("- We'll start making some questions like 'How many digits has the number?'")
     print("- Then we make our stuff trying to determine the 'secret number'")
-    print("- After that you'll tell us, if the number is correct.")
     print("- After you tell us, which number we think is correct, you'll help us by saying")
     print("  how many numbers are in the right position (Good) and how many correspond to")
     print("  the correct number but they aren't placed properly (Regular).")
@@ -22,7 +21,7 @@ def main():
 
     ended = False
     while ended is False:
-        if not Core().main():
+        if Core().main():
             ended = True
 
 

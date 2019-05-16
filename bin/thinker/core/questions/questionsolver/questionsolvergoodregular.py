@@ -43,16 +43,21 @@ class QuestionSolverGoodregular(QuestionSolver):
 
     def composeAnswer(self, answer):
         if len(self.oldResponses) is 0:
-            return [0, answer[0], answer[1]]
+            return []
         else:
             return [self.oldResponses[-1], answer[0], answer[1]]
 
     def validateAnswer(self, answer):
-        if answer[0] >= 0:
-            return True
+        if len(answer) > 0:
+            if answer[0] >= 0:
+                return True
+            else:
+                return False
         else:
-            return False
+            return True ## fue por el caso de el primer valor
 
     def saveAnswer(self, answer):
-        self.getQuestion(self.key).answers.append(answer)
+        if len(answer) is not 0:
+            self.getQuestion(self.key).answers.append(answer)
+
         return self.getQuestion(self.key).answers

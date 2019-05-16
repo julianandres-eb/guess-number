@@ -3,12 +3,16 @@ import numpy as np
 class GeneratorGoodregularNumbers:
 
     def generateNumbers(self, values, oldPossibleNumbers):
-        newPossibleNumbers = []
-        for possibleNumber in oldPossibleNumbers:
-            if self.testGoodRegular(values, possibleNumber):
-                newPossibleNumbers.append(possibleNumber)
+        if len(values) > 0:
+            newPossibleNumbers = []
+            for possibleNumber in oldPossibleNumbers:
+                if self.testGoodRegular(values, possibleNumber):
+                    newPossibleNumbers.append(possibleNumber)
 
-        return newPossibleNumbers
+            return newPossibleNumbers
+        else:
+
+            return oldPossibleNumbers
 
     def testGoodRegular(self, valuesForTest, numberToTest):
 
@@ -19,12 +23,12 @@ class GeneratorGoodregularNumbers:
 
             if oldNumberToTest is not 0:
                 [good, regular] = self.calculateCorrectAndRegular(oldNumberToTest, numberToTest)
-                if good is oldGood and regular is oldRegular:
+                if good == oldGood and regular == oldRegular:
                     return True and self.testGoodRegular(valuesForTest[1:], numberToTest)
                 else:
                     return False
             else:
-                return True
+                return True and self.testGoodRegular(valuesForTest[1:], numberToTest)
 
         else:
             return True
