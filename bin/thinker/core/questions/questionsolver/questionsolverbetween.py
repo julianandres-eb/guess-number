@@ -2,9 +2,9 @@ import random
 
 from .questionsolver import QuestionSolver
 
-
 class QuestionSolverBetween(QuestionSolver):
-    lowLimit = bigLimit = 0
+    lowLimit: int
+    bigLimit: int
 
     def __init__(self, question):
         super().__init__(question)

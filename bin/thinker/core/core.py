@@ -19,7 +19,7 @@ class Core:
             answers = questionnaire.askForResponses(oldResponses)
 
             # Generate number
-            possibleNumber = tg.NumberGenerator(answers).generateNumbers()
+            possibleNumber = tg.NumberGenerator(answers).generate()
             if possibleNumber is 0:
                 print("We can't see the real answer, try it later. Sorry")
                 return False

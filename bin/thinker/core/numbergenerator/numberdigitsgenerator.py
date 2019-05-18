@@ -1,29 +1,32 @@
 from collections import Counter
 
+
 class GeneratorDigitsNumbers:
 
-    def generateNumbers(self, digits, possiblenumbers):
+    ###########################################################
+    #
+    # generateNumbers(digits, possibleNumbers)
+    #
+    # positionNumbers: list of one value that contains how many digits the number has
+    # possibleNumbers: list of all values that can be considered as the user number
+    #
+    # This method creates all possible values that doesn't have repeated values
+    #
+    ###########################################################
 
-        numbersToClean = []
-        possibleNumbers = []
+    def generateNumbers(self, digits, possibleNumbers):
 
-        # Generate necessary values
-        if len(possiblenumbers) == 0:
-            numbersToClean = [i for i in range(pow(10, digits[0] - 1), pow(10, digits[0]) - 1)]
+        # If possibleNumbers is empty
+        if len(possibleNumbers) == 0:
 
-            for number in numbersToClean:
-                appearances = len(Counter(list(str(number))))
+            # We return a list with all the values
+            return [i for i in range(pow(10, digits[0] - 1), pow(10, digits[0]) - 1)
 
-                if appearances is digits[0]:
-                    possibleNumbers.append(number)
+                    # That doesn't have repeated values
+                    if len(Counter(list(str(i)))) is digits[0]]
 
+        # If possibleNumbers has already values
         else:
-            numbersToClean = possiblenumbers
 
-            for number in numbersToClean:
-                appearances = len(Counter(list(str(number))))
-
-                if appearances is not digits[0]:
-                    possibleNumbers.remove(number)
-
-        return possibleNumbers
+            # We only return a list which we remove values that have repeated values
+            return [i for i in possibleNumbers if len(Counter(list(str(i)))) is digits[0]]

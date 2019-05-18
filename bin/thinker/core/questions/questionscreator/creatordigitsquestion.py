@@ -3,10 +3,9 @@ from .questioncreator import QuestionCreator
 
 
 class CreatorDigitsQuestion(QuestionCreator):
-    """
-    Override the factory method to return an instance of a
-    QuestionDigits.
-    """
+
+    # Override the factory method to return an instance of a
+    # QuestionDigits.
 
     def _createQuestion(self, values):
         return QuestionDigits(values['value'], [], values['key'], values['reiterable'])
