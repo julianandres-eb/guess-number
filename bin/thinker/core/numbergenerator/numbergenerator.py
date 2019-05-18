@@ -1,5 +1,5 @@
 import random
-import numpy as np
+
 from .numberbetweengenerator import GeneratorBetweenNumbers
 from .numberdigitsgenerator import GeneratorDigitsNumbers
 from .numbergoodregulargenerator import GeneratorGoodregularNumbers
@@ -20,8 +20,7 @@ class NumberGenerator:
         for key, value in self.answers.items():
 
             generator = globals()[self.composeNameClass(key)]()
-            self.possibleNumbers.append(generator.generateNumbers(value, self.possibleNumbers))
-
+            self.possibleNumbers = generator.generateNumbers(value, self.possibleNumbers)
 
         lastPossibleNumber = self.selectPossibleNumber(self.possibleNumbers)
         self.oldResponses.append(lastPossibleNumber)

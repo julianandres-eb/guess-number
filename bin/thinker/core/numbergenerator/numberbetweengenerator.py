@@ -1,25 +1,21 @@
+from bin.thinker.core.questions.questionsolver.questionsolver import QuestionSolver
+
 class GeneratorBetweenNumbers:
 
     def generateNumbers(self, value, possibleNumbers):
-        boundariesToInsert = []
-        boundariesToDelete = []
+        boundaries = []
 
         for boundary in value:
             if boundary[2] is "y":
-                boundariesToInsert.append(boundary)
+                boundaries.append([0, boundary[0], boundary[2]])
+                boundaries.append([boundary[1], pow(10, QuestionSolver.digits) - 1, boundary[2]])
+
             if boundary[2] is "n":
-                boundariesToDelete.append(boundary)
+                boundaries.append(boundary)
 
-        for boundaryToInsert in boundariesToInsert:
-            [lowLimit, bigLimit, _] = boundaryToInsert
+        for b in boundaries:
+            [lowLimit, bigLimit, _] = b
             for i in range(lowLimit, bigLimit + 1):
-                if i not in possibleNumbers:
-                    possibleNumbers.append(i)
-
-        for boundaryToDelete in boundariesToDelete:
-            [lowLimit, bigLimit, _] = boundaryToDelete
-
-            for i in range(lowLimit, bigLimit):
                 if i in possibleNumbers:
                     possibleNumbers.remove(i)
 

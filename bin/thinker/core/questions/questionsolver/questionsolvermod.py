@@ -8,17 +8,22 @@ class QuestionSolverMod(QuestionSolver):
     mod = 0
 
     def askUserValue(self, oldResponses):
-        correctValue = False
+        correctValue = modCorrect = False
         value = 0
-        self.mod = random.choice(Utils().primes(10))
-        a = [answer[1] for answer in self.getQuestion(self.key).getAnswers()]
-        if self.mod not in a:
-            while correctValue is False:
-                value = input(self.getQuestion(self.key).getTitle() + " " + str(self.mod) + "? (y/n): ")
-                if value is "y" or value is "n":
-                    correctValue = True
-        else:
-            value = "x"
+
+        # QUE NO SE REPITA EL MOD
+        oldMods = [answer[1] for answer in self.getQuestion(self.key).getAnswers()]
+
+        while modCorrect is False:
+            self.mod = random.choice(Utils().primes(10))
+            if self.mod not in oldMods:
+                modCorrect = True
+
+        while correctValue is False:
+            value = input(self.getQuestion(self.key).getTitle() + " " + str(self.mod) + "? (y/n): ")
+            if value is "y" or value is "n":
+                correctValue = True
+
         return value
 
     def composeAnswer(self, answer):
