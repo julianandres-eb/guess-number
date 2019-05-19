@@ -2,9 +2,10 @@ from .questionsolver import QuestionSolver
 
 ###########################################################
 #
-# QuestionSolverBetween
+# QuestionSolverDigits
 #
-# Class that inherits from QuestionSolver. It's responsible of determining how many digits the correct number has,
+# Class that inherits from QuestionSolver. It's responsible
+# of determining how many digits the correct number has,
 # validates and persists it for futures uses
 #
 ###########################################################
