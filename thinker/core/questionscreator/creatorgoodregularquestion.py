@@ -1,4 +1,4 @@
-from bin.thinker.model.question.questiongoodregular import QuestionGoodregular
+from thinker.model.question.questiongoodregular import QuestionGoodregular
 from .questioncreator import QuestionCreator
 
 

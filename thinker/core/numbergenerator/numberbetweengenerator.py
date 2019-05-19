@@ -1,4 +1,4 @@
-from bin.thinker.core.questionsolver.questionsolver import QuestionSolver
+from thinker.core.questionsolver.questionsolver import QuestionSolver
 
 class GeneratorBetweenNumbers:
 

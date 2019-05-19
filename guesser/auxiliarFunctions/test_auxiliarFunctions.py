@@ -1,7 +1,7 @@
 # IMPORTS
 import unittest
 
-import bin.guesser.auxiliarFunctions.auxiliarFunctions as auxF
+import guesser.auxiliarFunctions.auxiliarFunctions as auxF
 
 
 class TestAuxiliarFunctions(unittest.TestCase):

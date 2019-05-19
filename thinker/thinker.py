@@ -1,4 +1,4 @@
-from bin.thinker.core.core import Core
+from thinker.core.core import Core
 
 def main():
     # Instructions and Rules

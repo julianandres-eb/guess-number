@@ -1,4 +1,4 @@
-from bin.thinker.model.question.questiondigits import QuestionDigits
+from thinker.model.question.questiondigits import QuestionDigits
 from .questioncreator import QuestionCreator
 
 

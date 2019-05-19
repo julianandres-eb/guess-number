@@ -1,13 +1,12 @@
 import json
 
-from bin.thinker.utils.singleton import Singleton
-from bin.thinker.utils.utils import Utils
-from bin.thinker.core.questionscreator.creatorgoodregularquestion import CreatorGoodregularQuestion
-from bin.thinker.core.questionscreator.creatormodquestion import CreatorModQuestion
-from bin.thinker.core.questionscreator.creatorbetweenquestion import CreatorBetweenQuestion
-from bin.thinker.core.questionscreator.creatorpositionquestion import CreatorPositionQuestion
-from bin.thinker.core.questionscreator.creatordigitsquestion import CreatorDigitsQuestion
-
+from thinker.utils.singleton import Singleton
+from thinker.utils.utils import Utils
+from thinker.core.numbergenerator.numberpositiongenerator import GeneratorPositionNumbers
+from thinker.core.numbergenerator.numbermodgenerator import GeneratorModNumbers
+from thinker.core.numbergenerator.numbergoodregulargenerator import GeneratorGoodregularNumbers
+from thinker.core.numbergenerator.numberdigitsgenerator import GeneratorDigitsNumbers
+from thinker.core.numbergenerator.numberbetweengenerator import GeneratorBetweenNumbers
 
 ###########################################################
 #

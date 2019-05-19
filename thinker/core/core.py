@@ -1,5 +1,5 @@
-import bin.thinker.core.numbergenerator.numbergenerator as tg
-import bin.thinker.core.questionnaire.questionnaire as qt
+import thinker.core.numbergenerator.numbergenerator as tg
+from thinker.core.questionnaire.questionnaire import Questionnaire
 
 
 ###########################################################
@@ -21,7 +21,7 @@ class Core:
         oldResponses : list = []
 
         # Do questionnaire!
-        questionnaire = qt.Questionnaire()
+        questionnaire = Questionnaire()
 
         # Until the user checks if the number is correct or we have tried enough
         while guessing is False:

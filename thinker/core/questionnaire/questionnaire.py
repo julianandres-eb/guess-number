@@ -1,11 +1,5 @@
 from .questionsgenerator import QuestionsGenerator
 
-from bin.thinker.core.questionsolver.questionsolvergoodregular import QuestionSolverGoodregular
-from bin.thinker.core.questionsolver.questionsolverdigits import QuestionSolverDigits
-from bin.thinker.core.questionsolver.questionsolverposition import QuestionSolverPosition
-from bin.thinker.core.questionsolver.questionsolverbetween import QuestionSolverBetween
-from bin.thinker.core.questionsolver.questionsolvermod import QuestionSolverMod
-
 
 ###########################################################
 #

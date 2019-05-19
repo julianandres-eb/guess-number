@@ -1,6 +1,6 @@
 import random
 
-from bin.thinker.utils.utils import Utils
+from thinker.utils.utils import Utils
 from .questionsolver import QuestionSolver
 
 ###########################################################

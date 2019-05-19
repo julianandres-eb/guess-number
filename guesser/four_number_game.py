@@ -1,7 +1,7 @@
 # Imports
 import time
 
-import bin.guesser.auxiliarFunctions.auxiliarFunctions as auxF
+import guesser.auxiliarFunctions.auxiliarFunctions as auxF
 
 
 def main():

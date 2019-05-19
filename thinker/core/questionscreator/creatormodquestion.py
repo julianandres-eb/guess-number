@@ -1,4 +1,4 @@
-from bin.thinker.model.question.questionmod import QuestionMod
+from thinker.model.question import QuestionMod
 from .questioncreator import QuestionCreator
 
 
