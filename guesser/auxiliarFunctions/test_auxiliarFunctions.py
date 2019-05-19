@@ -1,4 +1,3 @@
-# IMPORTS
 import unittest
 
 import guesser.auxiliarFunctions.auxiliarFunctions as auxF
@@ -7,16 +6,16 @@ import guesser.auxiliarFunctions.auxiliarFunctions as auxF
 class TestAuxiliarFunctions(unittest.TestCase):
 
     def test_FindRepeat(self):
-        # Sin repeticiones
+        # No repeated values
         self.assertEqual(auxF.findRepeat(list(str(1234))), False)
 
-        # Con 1 repeticion
+        # 1 repeated value
         self.assertEqual(auxF.findRepeat(list(str(1224))), True)
 
-        # Con dos repeticiones
+        # 2 repeated value
         self.assertEqual(auxF.findRepeat(list(str(1333))), True)
 
-        # Con 0
+        # Zero
         self.assertEqual(auxF.findRepeat(list(str(0))), False)
 
     # generateNumber
