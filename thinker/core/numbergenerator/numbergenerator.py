@@ -15,8 +15,9 @@ class NumberGenerator:
     answers : dict = {}
 
     # Class init
-    def __init__(self, answers):
+    def __init__(self, answers, oldResponses):
         self.answers = answers
+        self.oldResponses = oldResponses
 
     # Main Function
     def generate(self):
@@ -37,12 +38,14 @@ class NumberGenerator:
 
             # Otherwise we generate the possibleNumbers
             else:
-                self.possibleNumbers = generator.generateNumbers(value, self.possibleNumbers)
+                self.possibleNumbers = [i for i in generator.generateNumbers(value, self.possibleNumbers)]
+
+        # We eliminate the user responses
+        self.possibleNumbers = [i for i in self.possibleNumbers if i not in self.oldResponses]
 
     # After all hard work of generateNumbers, we choose one value to be the answer's machine
     def selectValue(self):
         lastPossibleNumber = self.selectPossibleNumber(self.possibleNumbers)
-        self.oldResponses.append(lastPossibleNumber)
         return lastPossibleNumber
 
     # Simple 'Random' Function

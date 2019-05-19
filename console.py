@@ -1,6 +1,6 @@
 import time
 
-import guesser.four_number_game as fg
+import guesser.guesser as fg
 import thinker.thinker as tk
 
 
@@ -18,10 +18,12 @@ def main():
         if index is "1":
             time.sleep(1.0)
             fg.main()
+            correct = True
 
         if index is "2":
             time.sleep(1.0)
             tk.main()
+            correct=True
 
         if index is "e":
             correct = True
