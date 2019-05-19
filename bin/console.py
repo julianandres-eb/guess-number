@@ -1,6 +1,6 @@
 import time
 
-import bin.four_number_game.four_number_game as fg
+import bin.guesser.four_number_game as fg
 import bin.thinker.thinker as tk
 
 

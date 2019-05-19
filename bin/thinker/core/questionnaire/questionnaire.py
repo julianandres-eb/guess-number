@@ -1,8 +1,13 @@
 from .questionsgenerator import QuestionsGenerator
 
+from bin.thinker.core.questionsolver.questionsolvergoodregular import QuestionSolverGoodregular
+from bin.thinker.core.questionsolver.questionsolverdigits import QuestionSolverDigits
+from bin.thinker.core.questionsolver.questionsolverposition import QuestionSolverPosition
+from bin.thinker.core.questionsolver.questionsolverbetween import QuestionSolverBetween
+from bin.thinker.core.questionsolver.questionsolvermod import QuestionSolverMod
 
 class Questionnaire:
-    _questions = []
+    questions = []
     answers = {}
     oldResponses = []
 
@@ -11,8 +16,8 @@ class Questionnaire:
 
     def initQuestionaire(self):
 
-        if not bool(self._questions):
-            self._questions = QuestionsGenerator().getQuestions()
+        if not bool(self.questions):
+            self.questions = QuestionsGenerator().getQuestions()
 
     def ask(self, question):
 
@@ -26,8 +31,6 @@ class Questionnaire:
             if solver.validateAnswer(answer):
                 answer = solver.saveAnswer(answer)
                 correct = True
-            else:
-                print("It's not a valid answer")
 
         return answer
 
@@ -36,7 +39,7 @@ class Questionnaire:
         self.oldResponses = oldResponses
 
         if self.canContinue():
-            for question in self._questions:
+            for question in self.questions:
                 if question.getReiterable() is "n":
                     if len(question.getAnswers()) is 0:
                         self.answers[question.key] = self.ask(question)
@@ -54,7 +57,7 @@ class Questionnaire:
     def canContinue(self):
         digits = 0
         positions = []
-        for question in self._questions:
+        for question in self.questions:
             if len(question.getAnswers()) > 0:
                 if question.getKey() is "digits":
                     digits = question.getAnswers()[0]

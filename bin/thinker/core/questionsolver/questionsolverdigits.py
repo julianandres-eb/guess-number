@@ -1,21 +1,23 @@
 from .questionsolver import QuestionSolver
 
+###########################################################
+#
+# QuestionSolverBetween
+#
+# Class that inherits from QuestionSolver. It's responsible of determining how many digits the correct number has,
+# validates and persists it for futures uses
+#
+###########################################################
 
 class QuestionSolverDigits(QuestionSolver):
 
     def askUserValue(self, oldResponses):
-        correctValue = False
         value = 0
-        while correctValue is False:
-            try:
-                value = int(input(self.getQuestion(self.key).getTitle() + "?: "))
-            except ValueError:
-                print("Not an integer!")
-                continue
-            else:
-                if value > 0:
-                    correctValue = True
-                break
+
+        try:
+            value = int(input(self.getQuestion(self.key).getTitle() + "?: "))
+        except ValueError:
+            print("Not an integer!")
 
         return value
 
@@ -23,9 +25,11 @@ class QuestionSolverDigits(QuestionSolver):
         return [answer]
 
     def validateAnswer(self, answer):
+
         if answer[0] > 0:
             return True
         else:
+            print("It's not a valid answer. Only numbers bigger than zero")
             return False
 
     def saveAnswer(self, answer):

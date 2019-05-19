@@ -1,8 +1,8 @@
 class Question:
-    title = ""
-    answers = []
-    key = ""
-    reiterable = ""
+    title: str
+    answers: list
+    key: str
+    reiterable = str
 
     def __init__(self, title, answers, key, reiterable):
         self.title = title

@@ -1,7 +1,7 @@
 # Imports
 import time
 
-import bin.four_number_game.auxiliarFunctions.auxiliarFunctions as auxF
+import bin.guesser.auxiliarFunctions.auxiliarFunctions as auxF
 
 
 def main():

@@ -2,19 +2,22 @@ from abc import ABC, abstractmethod
 
 ###########################################################
 #
-# generateNumbers(value, possibleNumbers)
+# QuestionSolver(Abstract Class)
 #
-# positionNumbers: list of lists where each has [lowLimit, bigLimit, y/n]
-# possibleNumbers: list of all values that can be considered as the user number
+# questions: all questions with the answers associated
+# digits: how many digits the number has
+# key: value to separate the solvers
 #
-# This method creates different boundaries that remove values from possibleNumbers
+# This class help us to separate the logic for each question into divided class
+# Also it's useful because we can define the questions behaviour in the same way
+# Not worrying about what if one modification affects other parts of the code
 #
 ###########################################################
 
 class QuestionSolver(ABC):
-    questions : list
-    digits : int
-    key : str
+    questions: list = []
+    digits: int
+    key: str
 
     def __init__(self, question):
         super(QuestionSolver, self).__init__()
@@ -38,12 +41,7 @@ class QuestionSolver(ABC):
         pass
 
     def getQuestion(self, key):
-        questionToReturn = []
-        for q in self.questions:
-            if q.key == key:
-                questionToReturn.append(q)
-                break
-        return questionToReturn[-1]
+        return [q for q in self.questions if q.key is key][-1]
 
     def getAnswers(self, key):
         return self.getQuestion(key).answers

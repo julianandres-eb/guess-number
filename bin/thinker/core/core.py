@@ -1,5 +1,5 @@
 import bin.thinker.core.numbergenerator.numbergenerator as tg
-import bin.thinker.core.questions.questionnaire as qt
+import bin.thinker.core.questionnaire.questionnaire as qt
 
 
 class Core:
@@ -12,7 +12,7 @@ class Core:
         guessing: bool = False
         oldResponses = []
 
-        # Do questions!
+        # Do questionnaire!
         questionnaire = qt.Questionnaire()
 
         while guessing is False:
