@@ -1,10 +1,20 @@
 from abc import ABC, abstractmethod
 
+###########################################################
+#
+# generateNumbers(value, possibleNumbers)
+#
+# positionNumbers: list of lists where each has [lowLimit, bigLimit, y/n]
+# possibleNumbers: list of all values that can be considered as the user number
+#
+# This method creates different boundaries that remove values from possibleNumbers
+#
+###########################################################
 
 class QuestionSolver(ABC):
-    questions = []
-    digits = 0
-    key = ""
+    questions : list
+    digits : int
+    key : str
 
     def __init__(self, question):
         super(QuestionSolver, self).__init__()

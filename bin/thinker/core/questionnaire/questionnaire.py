@@ -1,10 +1,5 @@
 from .questionsgenerator import QuestionsGenerator
 
-from bin.thinker.core.questions.questionsolver.questionsolvermod import QuestionSolverMod
-from bin.thinker.core.questions.questionsolver.questionsolverbetween import QuestionSolverBetween
-from bin.thinker.core.questions.questionsolver.questionsolverposition import QuestionSolverPosition
-from bin.thinker.core.questions.questionsolver.questionsolverdigits import QuestionSolverDigits
-from bin.thinker.core.questions.questionsolver.questionsolvergoodregular import QuestionSolverGoodregular
 
 class Questionnaire:
     _questions = []

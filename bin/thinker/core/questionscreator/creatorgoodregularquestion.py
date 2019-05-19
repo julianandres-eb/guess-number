@@ -7,6 +7,5 @@ class CreatorGoodregularQuestion(QuestionCreator):
     # Override the factory method to return an instance of a
     # QuestionGoodRegular.
 
-
     def _createQuestion(self, values):
         return QuestionGoodregular(values['value'], [], values['key'], values['reiterable'])
