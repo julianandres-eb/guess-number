@@ -13,16 +13,15 @@ class GeneratorPositionNumbers:
     #
     ###########################################################
 
-
     def generateNumbers(self, positionNumbers, possibleNumbers):
+        numbersToReturn : list = []
 
         for possibleNumber in possibleNumbers:
             for positionNumber in positionNumbers:
 
                 # Convert the number into a list of strings to separate and make a comparision with positionNumber
-                # And if not, we remove it and don't keep testing with that number
-                if int(str(list(str(possibleNumber))[positionNumber[0] - 1])) is not positionNumber[1]:
-                    possibleNumbers.remove(possibleNumber)
-                    break
+                # And if not, we append it and return it
+                if int(str(list(str(possibleNumber))[positionNumber[0] - 1])) is positionNumber[1]:
+                    numbersToReturn.append(possibleNumber)
 
-        return possibleNumbers
+        return numbersToReturn

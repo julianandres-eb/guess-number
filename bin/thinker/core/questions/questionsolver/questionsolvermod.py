@@ -33,14 +33,24 @@ class QuestionSolverMod(QuestionSolver):
             return []
 
     def composeAnswer(self, answer):
-        return [answer, self.mod]
+        if len(answer) is not 0:
+            return [answer, self.mod]
+        else:
+            return []
 
     def validateAnswer(self, answer):
-        if answer[0] is "y" or answer[0] is "n" and (0 < answer[1] < 10):
-            return True
+        if len(answer) > 0:
+            if answer[0] is "y" or answer[0] is "n" and (0 < answer[1] < 10):
+                return True
+            else:
+                return False
         else:
             return False
 
     def saveAnswer(self, answer):
-        self.getQuestion(self.key).answers.append(answer)
-        return self.getQuestion(self.key).answers
+        if len(answer) is not 0:
+            self.getQuestion(self.key).answers.append(answer)
+            return self.getQuestion(self.key).answers
+
+        else:
+            return []

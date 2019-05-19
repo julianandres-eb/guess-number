@@ -24,7 +24,7 @@ class Core:
                 print("We can't see the real answer, try it later. Sorry")
                 return False
             else:
-                response = input("Is " + str(int(possibleNumber)) + " correct(y/n)?: ")
+                response = input("Is " + str(possibleNumber) + " correct(y/n)?: ")
                 if response is "y":
                     self.guessing = True
                     print("We win!")

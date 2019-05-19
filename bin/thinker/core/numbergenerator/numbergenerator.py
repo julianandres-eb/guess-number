@@ -21,7 +21,7 @@ class NumberGenerator:
     # Main Function
     def generate(self):
         self.generateNumbers()
-        self.selectValue()
+        return self.selectValue()
 
     def generateNumbers(self):
 
