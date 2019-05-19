@@ -1,4 +1,4 @@
-from thinker.model.question import QuestionBetween
+from thinker.model.question.questionbetween import QuestionBetween
 from .questioncreator import QuestionCreator
 
 

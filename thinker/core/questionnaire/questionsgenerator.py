@@ -2,11 +2,11 @@ import json
 
 from thinker.utils.singleton import Singleton
 from thinker.utils.utils import Utils
-from thinker.core.numbergenerator.numberpositiongenerator import GeneratorPositionNumbers
-from thinker.core.numbergenerator.numbermodgenerator import GeneratorModNumbers
-from thinker.core.numbergenerator.numbergoodregulargenerator import GeneratorGoodregularNumbers
-from thinker.core.numbergenerator.numberdigitsgenerator import GeneratorDigitsNumbers
-from thinker.core.numbergenerator.numberbetweengenerator import GeneratorBetweenNumbers
+from thinker.core.questionscreator.creatordigitsquestion import CreatorDigitsQuestion
+from thinker.core.questionscreator.creatorpositionquestion import CreatorPositionQuestion
+from thinker.core.questionscreator.creatorbetweenquestion import CreatorBetweenQuestion
+from thinker.core.questionscreator.creatormodquestion import CreatorModQuestion
+from thinker.core.questionscreator.creatorgoodregularquestion import CreatorGoodregularQuestion
 
 ###########################################################
 #

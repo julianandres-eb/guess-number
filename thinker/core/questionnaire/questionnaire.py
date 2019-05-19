@@ -1,5 +1,10 @@
 from .questionsgenerator import QuestionsGenerator
 
+from thinker.core.questionsolver.questionsolvermod import QuestionSolverMod
+from thinker.core.questionsolver.questionsolverbetween import QuestionSolverBetween
+from thinker.core.questionsolver.questionsolverposition import QuestionSolverPosition
+from thinker.core.questionsolver.questionsolverdigits import QuestionSolverDigits
+from thinker.core.questionsolver.questionsolvergoodregular import QuestionSolverGoodregular
 
 ###########################################################
 #
