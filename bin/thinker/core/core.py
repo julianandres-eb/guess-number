@@ -2,19 +2,28 @@ import bin.thinker.core.numbergenerator.numbergenerator as tg
 import bin.thinker.core.questionnaire.questionnaire as qt
 
 
+###########################################################
+#
+# Core
+#
+# Class that leads all the process of 'thinking' the number
+# that the user has thought
+#
+###########################################################
+
 class Core:
 
-    def __init__(self):
-        pass
-
     def main(self):
+
+        # Declaration of variables
         counterAnswers: int = 0
         guessing: bool = False
-        oldResponses = []
+        oldResponses : list = []
 
         # Do questionnaire!
         questionnaire = qt.Questionnaire()
 
+        # Until the user checks if the number is correct or we have tried enough
         while guessing is False:
             answers = questionnaire.askForResponses(oldResponses)
 
@@ -24,7 +33,9 @@ class Core:
                 print("We can't see the real answer, try it later. Sorry")
                 return False
             else:
+                # Ask the user if our possible number is correct
                 response = input("Is " + str(possibleNumber) + " correct(y/n)?: ")
+
                 if response is "y":
                     self.guessing = True
                     print("We win!")
