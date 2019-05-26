@@ -1,5 +1,4 @@
 import unittest
-from collections import Counter
 from thinker.core.numbergenerator.numberdigitsgenerator import GeneratorDigitsNumbers as g
 
 class TestNumberDigitsGenerator(unittest.TestCase):
