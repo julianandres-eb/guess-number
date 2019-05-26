@@ -12,7 +12,6 @@ class GeneratorModNumbers:
     #
     # This method determine if value has one or several 'mod'
     #
-    #
     ###########################################################
 
     def evaluateMod(self, value, answers):

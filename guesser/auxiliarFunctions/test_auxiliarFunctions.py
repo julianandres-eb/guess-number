@@ -36,7 +36,7 @@ class TestAuxiliarFunctions(unittest.TestCase):
     def test_askUserToShot(self):
         shot = auxF.askToUserShot()
 
-        # number >= 1000
+        #number >= 1000
         self.assertGreaterEqual(shot, 1000)
 
         # number <= 9999
