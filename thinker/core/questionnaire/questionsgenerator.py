@@ -32,7 +32,7 @@ class QuestionsGenerator(metaclass=Singleton):
 
         # Create Questions from File
         # - Read file and generate a dict
-        with open(Utils.getQuestionsPath(), 'r') as JSON:
+        with open(Utils().getQuestionsPath(), 'r') as JSON:
             allQuestions = json.load(JSON)
 
         # For each question, we create the questions model

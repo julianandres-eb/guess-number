@@ -43,7 +43,7 @@ class NumberGenerator:
         # We eliminate the user responses
         self.possibleNumbers = [i for i in self.possibleNumbers if i not in self.oldResponses]
 
-    # After all hard work of generateNumbers, we choose one value to be the answer's machine
+    # After all hard work of generateNumbers, we choose one value to be the computer's answer
     def selectValue(self):
         lastPossibleNumber = self.selectPossibleNumber(self.possibleNumbers)
         return lastPossibleNumber
