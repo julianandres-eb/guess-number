@@ -1,4 +1,5 @@
 import unittest
+from unittest.mock import patch
 
 import guesser.auxiliarFunctions.auxiliarFunctions as auxF
 
@@ -34,13 +35,16 @@ class TestAuxiliarFunctions(unittest.TestCase):
 
     # askUserToShot
     def test_askUserToShot(self):
-        shot = auxF.askToUserShot()
+        inputs = ["1", "30", "123", "12458", "1234"]
+
+        with patch('builtins.input', side_effect=inputs):
+            i = auxF.askToUserShot()
 
         #number >= 1000
-        self.assertGreaterEqual(shot, 1000)
+        self.assertGreaterEqual(i, 1000)
 
         # number <= 9999
-        self.assertLessEqual(shot, 9999)
+        self.assertLessEqual(i, 9999)
 
     # calculateCorrectAndRegular
     def test_positiveCalculateCorrectAndRegular(self):
