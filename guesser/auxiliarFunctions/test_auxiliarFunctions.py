@@ -9,22 +9,18 @@ class TestAuxiliarFunctions(unittest.TestCase):
     def test_FindRepeatWithNoRepeatedValues(self):
         # No repeated values
         self.assertEqual(auxF.findRepeat(list(str(1234))), False)
-        print("test_FindRepeatWithNoRepeatedValues --> Passed")
 
     def test_FindRepeatWithOneRepeatedValue(self):
         # 1 repeated value
         self.assertEqual(auxF.findRepeat(list(str(1224))), True)
-        print("test_FindRepeatWithOneRepeatedValue --> Passed")
 
     def test_FindRepeatWithTwoRepeatedValues(self):
         # 2 repeated values
         self.assertEqual(auxF.findRepeat(list(str(1333))), True)
-        print("test_FindRepeatWithTwoRepeatedValues --> Passed")
 
     def test_FindRepeatWithZero(self):
         # Zero
         self.assertEqual(auxF.findRepeat(list(str(0))), False)
-        print("test_FindRepeatWithZero --> Passed")
 
     # generateNumber
     def test_generateNumberAmongBoundaries(self):
@@ -36,8 +32,6 @@ class TestAuxiliarFunctions(unittest.TestCase):
         # number <= 9999
         self.assertLessEqual(generatedNumber, 9999)
 
-        print("test_generateNumberAmongBoundaries --> Passed")
-
     # askUserToShot
     def test_askUserToShot(self):
         shot = auxF.askToUserShot()
@@ -47,8 +41,6 @@ class TestAuxiliarFunctions(unittest.TestCase):
 
         # number <= 9999
         self.assertLessEqual(shot, 9999)
-
-        print("test_askUserToShot --> Passed")
 
     # calculateCorrectAndRegular
     def test_positiveCalculateCorrectAndRegular(self):
@@ -64,8 +56,6 @@ class TestAuxiliarFunctions(unittest.TestCase):
         # correctNumber: 1234, userShot: 1234 == correct: 4, regular: 0
         self.assertEqual(auxF.calculateCorrectAndRegular(1234, 1234), [4, 0])
 
-        print("test_positiveCalculateCorrectAndRegular --> Passed")
-
     def test_negativeCalculateCorrectAndRegular(self):
         # correctNumber: 1234, userShot: 1273 != correct: 0, regular: 0
         self.assertIsNot(auxF.calculateCorrectAndRegular(1273, 1234), [0, 0])
@@ -78,5 +68,3 @@ class TestAuxiliarFunctions(unittest.TestCase):
 
         # correctNumber: 1234, userShot: 1234 != correct: 1, regular: 0
         self.assertIsNot(auxF.calculateCorrectAndRegular(1234, 1234), [1, 0])
-
-        print("test_negativeCalculateCorrectAndRegular --> Passed")
