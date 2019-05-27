@@ -34,8 +34,8 @@ class QuestionSolverBetween(QuestionSolver):
     ###########################################################
 
     def askUserValue(self, oldResponses):
-        correctLimit: bool  = False
-        correctAnswer: bool  = False
+        correctLimit: bool = False
+        correctAnswer: bool = False
 
         # Creating a boundary and checking if lowLimit is < than bigLimit
         while correctLimit is False:

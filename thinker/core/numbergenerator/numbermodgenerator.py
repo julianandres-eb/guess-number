@@ -1,7 +1,9 @@
 class GeneratorModNumbers:
 
     def generateNumbers(self, values, possibleNumbers):
-        return [possibleNumber for possibleNumber in possibleNumbers if self.evaluateMod(possibleNumber, values)]
+
+        # We 'filter' what we received
+        return list(filter(lambda x: self.evaluateMod(x, values), [possibleNumber for possibleNumber in possibleNumbers]))
 
     ###########################################################
     #

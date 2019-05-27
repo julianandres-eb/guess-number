@@ -19,7 +19,6 @@ class QuestionSolverDigits(QuestionSolver):
             value = int(input(self.getQuestion(self.key).getTitle() + "?: "))
         except ValueError:
             print("Not an integer!")
-
         return value
 
     def composeAnswer(self, answer):

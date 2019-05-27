@@ -45,15 +45,11 @@ class NumberGenerator:
 
     # After all hard work of generateNumbers, we choose one value to be the computer's answer
     def selectValue(self):
-        lastPossibleNumber = self.selectPossibleNumber(self.possibleNumbers)
-        return lastPossibleNumber
+        return self.selectPossibleNumber(self.possibleNumbers)
 
     # Simple 'Random' Function
     def selectPossibleNumber(self, values):
-        if len(values) > 0:
-            return random.choice(values)
-        else:
-            return 0
+        return random.choice(values) if len(values) > 0 else 0
 
     # Function that returns the name of the generator class
     def composeNameClass(self, key):

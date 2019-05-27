@@ -15,9 +15,8 @@ class GeneratorGoodregularNumbers:
 
     def generateNumbers(self, values, possibleNumbers):
 
-        # We clean what we receive
-        return [possibleNumber for possibleNumber in possibleNumbers if self.testGoodRegular(values, possibleNumber)]
-
+        # We 'filter' what we receive
+        return list(filter(lambda x: self.testGoodRegular(values, x), [possibleNumber for possibleNumber in possibleNumbers]))
 
     ###########################################################
     #
