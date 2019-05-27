@@ -33,8 +33,16 @@ class Core:
                 print("We can't see the real answer, try it later. Sorry")
                 return False
             else:
+
                 # Ask the user if our possible number is correct
-                response = input("Is " + str(possibleNumber) + " correct(y/n)?: ")
+                correctAnswer: bool = False
+                response: str
+                while correctAnswer is False:
+                    response = input("Is " + str(possibleNumber) + " correct(y/n)?: ")
+                    if response is "y" or response is "n":
+                        correctAnswer = True
+                    else:
+                        print("Not a valid answer, only y or n. Try again!")
 
                 if response is "y":
                     self.guessing = True

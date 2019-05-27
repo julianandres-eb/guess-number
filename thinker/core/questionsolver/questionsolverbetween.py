@@ -52,6 +52,8 @@ class QuestionSolverBetween(QuestionSolver):
             if i is "y" or i is "n":
                 self.correctAnswer = True
                 return i
+            else:
+                print("Not a valid answer, only y or n. Try again!")
 
 
     def composeAnswer(self, value):

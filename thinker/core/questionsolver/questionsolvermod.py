@@ -42,6 +42,8 @@ class QuestionSolverMod(QuestionSolver):
                 value = input(self.getQuestion(self.key).getTitle() + " " + str(self.mod) + "? (y/n): ")
                 if value is "y" or value is "n":
                     correctValue = True
+                else:
+                    print("Not a valid answer, only y or n. Try again!")
 
             return value
 
