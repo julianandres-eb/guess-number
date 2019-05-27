@@ -11,7 +11,7 @@ def main():
     print("Welcome to '4NG', our 'tiny' game to guess which number we're hiding to you")
     print("Let's get started!")
     print("The instructions are the following:")
-    print("- You have to guess a number between 0 and 9999 (that means 4 digits)")
+    print("- You have to guess a number between 1000 and 9999 (that means 4 digits)")
     print("- These 4 digits cannot be repeated, for example: 1224")
     print("- After you tell us, which number you think is correct, we'll help you by saying")
     print("how many numbers are in the right position (Good) and how many correspond to")

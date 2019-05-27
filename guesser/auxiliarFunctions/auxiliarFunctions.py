@@ -38,14 +38,19 @@ def askToUserShot():
     response = 0
 
     while hasFourDigits is False:
-        response = int(input("Enter a four-digit number: "))
-
-        if len(str(response)) == 4:
-            hasFourDigits = True
+        try:
+            response = int(input("Enter a four-digit number: "))
+        except ValueError:
+            print("Not an integer!")
+            continue
         else:
-            print("The number has " + str(len(str(response))) + " digits, not 4")
+            if len(str(response)) == 4:
+                hasFourDigits = True
+            else:
+                print("The number has " + str(len(str(response))) + " digits, not 4")
 
     return response
+
 
 
 # Method that returns how many "corrects" and "regulars" are

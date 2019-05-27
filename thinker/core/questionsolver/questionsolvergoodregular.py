@@ -54,14 +54,9 @@ class QuestionSolverGoodregular(QuestionSolver):
 
     def composeAnswer(self, answer):
 
+        # Use the last value (the current) and compose the answer
         # Validate if the computer has determined a possible number
-        if len(self.oldResponses) is not 0:
-
-            # Use the last value (the current) and compose the answer
-            return [self.oldResponses[-1], answer[0], answer[1]]
-
-        else:
-            return []
+        return [self.oldResponses[-1], answer[0], answer[1]] if len(self.oldResponses) is not 0 else []
 
     def validateAnswer(self, answer):
 

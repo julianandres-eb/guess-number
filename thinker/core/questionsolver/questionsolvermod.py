@@ -52,10 +52,7 @@ class QuestionSolverMod(QuestionSolver):
     def composeAnswer(self, answer):
 
         # Check if we performed a mod
-        if len(answer) is not 0:
-            return [answer, self.mod]
-        else:
-            return []
+        return [answer, self.mod] if len(answer) is not 0 else []
 
     def validateAnswer(self, composedAnswer):
 
