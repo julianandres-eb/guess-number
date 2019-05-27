@@ -1,5 +1,4 @@
 import unittest
-
 from unittest.mock import patch
 from thinker.core.numbergenerator.numberbetweengenerator import GeneratorBetweenNumbers
 from thinker.core.questionsolver.questionsolver import QuestionSolver

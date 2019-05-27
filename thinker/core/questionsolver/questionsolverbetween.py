@@ -34,7 +34,8 @@ class QuestionSolverBetween(QuestionSolver):
     ###########################################################
 
     def askUserValue(self, oldResponses):
-        correctLimit = False
+        correctLimit: bool  = False
+        correctAnswer: bool  = False
 
         # Creating a boundary and checking if lowLimit is < than bigLimit
         while correctLimit is False:
@@ -44,7 +45,14 @@ class QuestionSolverBetween(QuestionSolver):
             if self.lastLowLimit < self.lastBigLimit:
                 correctLimit = True
 
-        return input(self.getQuestion(self.key).getTitle() + " " + str(self.lastLowLimit) + " and " + str(self.lastBigLimit) + "? (y/n): ")
+        while correctAnswer is False:
+            i = input(self.getQuestion(self.key).getTitle() + " " + str(self.lastLowLimit) + " and " + str(
+                self.lastBigLimit) + "? (y/n): ")
+
+            if i is "y" or i is "n":
+                self.correctAnswer = True
+                return i
+
 
     def composeAnswer(self, value):
         return [self.lastLowLimit, self.lastBigLimit, value]
