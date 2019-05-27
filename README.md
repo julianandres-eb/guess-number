@@ -17,7 +17,7 @@ A step by step series of how to set up the project
 Clone the project
 
 ```
-git clone https://www.github.com/julianandreslucatelli/guess-number
+git clone https://github.com/julianandreslucatelli/guess-number
 ```
 
 And use requirements.txt to install packages
