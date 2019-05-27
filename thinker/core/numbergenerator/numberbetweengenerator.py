@@ -1,3 +1,5 @@
+from thinker.core.questionsolver.questionsolver import QuestionSolver
+
 class GeneratorBetweenNumbers:
 
     ###########################################################
@@ -14,7 +16,7 @@ class GeneratorBetweenNumbers:
     def generateNumbers(self, values, possibleNumbers):
 
         # Determine how many digits not using QuestionSolver
-        digits = len(list(str(possibleNumbers[-1])))
+        # digits = len(list(str(possibleNumbers[-1])))
 
         # List of lists which contains all boundaries to remove
         boundaries: list = []
@@ -28,7 +30,7 @@ class GeneratorBetweenNumbers:
             # to pow(10, digits) - 1 to eliminate the unnecessary values
             if boundary[2] is "y":
                 boundaries.append([0, boundary[0] - 1, boundary[2]])
-                boundaries.append([boundary[1] + 1, pow(10, digits) - 1, boundary[2]])
+                boundaries.append([boundary[1] + 1, pow(10, QuestionSolver.digits) - 1, boundary[2]])
 
             # If the user says that the value is in [lowLimit, bigLimit, y],
             # we only append the boundary

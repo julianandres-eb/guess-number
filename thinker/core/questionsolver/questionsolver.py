@@ -16,14 +16,13 @@ from abc import ABC, abstractmethod
 
 class QuestionSolver(ABC):
     questions: list = []
-    digits: int
+    digits: int = 0
     key: str
 
-    def __init__(self, question, digits=0):
+    def __init__(self, question):
         super(QuestionSolver, self).__init__()
         self.questions.append(question)
         self.key = question.key
-        self.digits = digits
 
     @abstractmethod
     def askUserValue(self, oldResponses):

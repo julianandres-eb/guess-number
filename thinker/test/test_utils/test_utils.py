@@ -13,7 +13,7 @@ class TestUtils(unittest.TestCase):
         self.assertIsInstance(Utils().primes(), list)
 
     def test_PrimesNoGreaterThanBound(self):
-        bound = random.randint(2, 100)
+        bound = random.randint(10, 100)
         primes = Utils().primes(bound=bound)
         self.assertIs(len([i for i in primes if i >= bound]), 0)
 
