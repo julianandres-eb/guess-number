@@ -19,10 +19,11 @@ class QuestionSolver(ABC):
     digits: int
     key: str
 
-    def __init__(self, question):
+    def __init__(self, question, digits=0):
         super(QuestionSolver, self).__init__()
         self.questions.append(question)
         self.key = question.key
+        self.digits = digits
 
     @abstractmethod
     def askUserValue(self, oldResponses):
@@ -45,3 +46,6 @@ class QuestionSolver(ABC):
 
     def getAnswers(self, key):
         return self.getQuestion(key).answers
+
+    def getDigits(self):
+        return self.digits
