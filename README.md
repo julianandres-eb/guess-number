@@ -1,66 +1,47 @@
 # guess-number
 
-One Paragraph of project description goes here
+This project contains both exercises required from Eventbrite EDA Program
 
 ## Getting Started
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+These instructions will get you a copy of the project up and running on your local machine.
 
 ### Prerequisites
 
-What things you need to install the software and how to install them
-
-```
-Give examples
-```
+First of all, you need python >= 3.6 and pip up and available
 
 ### Installing
 
-A step by step series of examples that tell you how to get a development env running
+A step by step series of how to set up the project
 
-Say what the step will be
-
-```
-Give the example
-```
-
-And repeat
+Clone the project
 
 ```
-until finished
+git clone https://www.github.com/julianandreslucatelli/guess-number
 ```
 
-End with an example of getting some data out of the system or using it for a little demo
+And use requirements.txt to install packages
+
+```
+pip install -r requirements.txt
+```
+## Running the project
+
+To run the project, just execute
+```
+python console.py
+```
 
 ## Running the tests
 
-Explain how to run the automated tests for this system
-
-### Break down into end to end tests
-
-Explain what these tests test and why
-
+To run all the tests, just execute
 ```
-Give an example
+python -m unittest discover -v
 ```
-
-### And coding style tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
-
-## Deployment
-
-Add additional notes about how to deploy this on a live system
 
 ## Built With
 
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
-* [Maven](https://maven.apache.org/) - Dependency Management
-* [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
+* [Pycharm](www.jetbrains.com) - An IDE from IntelliJ Project
 
 ## Authors
 
