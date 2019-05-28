@@ -21,17 +21,10 @@ class GeneratorModNumbers:
             answer, mod = answers[0]
 
             if answer is 'y':
-                if value % mod == 0:
-                    return True and self.evaluateMod(value, answers[1:])
-                else:
-                    return False
+                return True and self.evaluateMod(value, answers[1:]) if value % mod == 0 else False
 
             if answer is 'n':
-                a = value % mod
-                if a == 0:
-                    return False
-                else:
-                    return True and self.evaluateMod(value, answers[1:])
+                return False if value % mod == 0 else True and self.evaluateMod(value, answers[1:])
 
         else:
             return True

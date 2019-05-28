@@ -41,7 +41,7 @@ class NumberGenerator:
                 self.possibleNumbers = [i for i in generator.generateNumbers(value, self.possibleNumbers)]
 
         # We eliminate the user responses
-        self.possibleNumbers = [i for i in self.possibleNumbers if i not in self.oldResponses]
+        self.possibleNumbers = list(filter(lambda i: i not in self.oldResponses, [i for i in self.possibleNumbers]))
 
     # After all hard work of generateNumbers, we choose one value to be the computer's answer
     def selectValue(self):
