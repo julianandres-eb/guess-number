@@ -8,7 +8,7 @@ def main():
     # Instructions
     print("------------------------------------------------------------------------------------")
 
-    print("Welcome to '4NG', our 'tiny' game to guess which number we're hiding to you")
+    print("Welcome to '4NG', our 'tiny' game to guess which number we're hiding from you")
     print("Let's get started!")
     print("The instructions are the following:")
     print("- You have to guess a number between 1000 and 9999 (that means 4 digits)")
